@@ -1,0 +1,212 @@
+/******************************************************************************
+ * $Id$
+ *
+ * Copyright (c) 2005-2006 Transmission authors and contributors
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"),
+ * to deal in the Software without restriction, including without limitation
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense,
+ * and/or sell copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+ * DEALINGS IN THE SOFTWARE.
+ *****************************************************************************/
+
+#ifndef CONTROLLER_H
+#define CONTROLLER_H
+
+#import <Cocoa/Cocoa.h>
+#import <transmission.h>
+#import "PrefsController.h"
+#import "InfoWindowController.h"
+#import "MessageWindowController.h"
+#import "Badger.h"
+#import "ImageBackgroundView.h"
+#import "BarButton.h"
+
+#import <Growl/Growl.h>
+
+@class TorrentTableView;
+
+@interface Controller : NSObject <GrowlApplicationBridgeDelegate>
+{
+    tr_handle_t                     * fLib;
+    int                             fCompleted;
+    
+    NSMutableArray                  * fTorrents, * fDisplayedTorrents;
+    
+    PrefsController                 * fPrefsController;
+    NSUserDefaults                  * fDefaults;
+    InfoWindowController            * fInfoController;
+    MessageWindowController         * fMessageController;
+
+    IBOutlet NSWindow               * fWindow;
+    IBOutlet NSScrollView           * fScrollView;
+    IBOutlet TorrentTableView       * fTableView;
+    NSToolbar                       * fToolbar;
+    
+    IBOutlet NSMenuItem             * fOpenIgnoreDownloadFolder;
+    
+    IBOutlet NSButton               * fActionButton, * fSpeedLimitButton;
+    NSTimer                         * fSpeedLimitTimer;
+    
+    IBOutlet ImageBackgroundView    * fStatusBar;
+    IBOutlet NSTextField            * fTotalDLField, * fTotalULField, * fTotalTorrentsField;
+    
+    NSString                        * fSortType;
+    IBOutlet NSMenuItem             * fNameSortItem, * fStateSortItem, * fProgressSortItem,
+                                    * fDateSortItem, * fOrderSortItem,
+                                    * fNameSortActionItem, * fStateSortActionItem, * fProgressSortActionItem,
+                                    * fDateSortActionItem, * fOrderSortActionItem;
+    
+    IBOutlet ImageBackgroundView    * fFilterBar;
+    NSString                        * fFilterType;
+    IBOutlet BarButton              * fNoFilterButton, * fPauseFilterButton,
+                                    * fSeedFilterButton, * fDownloadFilterButton;
+    IBOutlet NSSearchField          * fSearchFilterField;
+    IBOutlet NSMenuItem             * fNextFilterItem, * fPrevFilterItem;
+                                
+    IBOutlet NSMenuItem             * fNextInfoTabItem, * fPrevInfoTabItem;
+    
+    IBOutlet NSMenu                 * fUploadMenu, * fDownloadMenu;
+    IBOutlet NSMenuItem             * fUploadLimitItem, * fUploadNoLimitItem,
+                                    * fDownloadLimitItem, * fDownloadNoLimitItem;
+    
+    IBOutlet NSWindow               * fURLSheetWindow;
+    IBOutlet NSTextField            * fURLSheetTextField;
+
+    io_connect_t                    fRootPort;
+    NSTimer                         * fTimer;
+    
+    IBOutlet SUUpdater              * fUpdater;
+    BOOL                            fUpdateInProgress;
+    
+    Badger                          * fBadger;
+    
+    NSMutableArray                  * fAutoImportedNames;
+    NSMutableDictionary             * fPendingTorrentDownloads;
+}
+
+- (void) openFiles:             (NSArray *) filenames;
+- (void) openFiles:             (NSArray *) filenames ignoreDownloadFolder: (BOOL) ignore forceDeleteTorrent: (BOOL) delete;
+- (void) openFilesAsk:          (NSMutableArray *) files forceDeleteTorrent: (BOOL) delete;
+- (void) openFilesAskWithDict:  (NSDictionary *) dictionary;
+- (void) openShowSheet:         (id) sender;
+- (void) openURL:               (NSURL *) torrentURL;
+- (void) openURLEndSheet:       (id) sender;
+- (void) openURLCancelEndSheet: (id) sender;
+- (void) openURLShowSheet:      (id) sender;
+
+- (void) quitSheetDidEnd: (NSWindow *) sheet returnCode: (int) returnCode contextInfo: (void *) contextInfo;
+
+- (void) resumeSelectedTorrents:    (id) sender;
+- (void) resumeAllTorrents:         (id) sender;
+- (void) resumeTorrents:            (NSArray *) torrents;
+
+- (void) resumeSelectedTorrentsNoWait:  (id) sender;
+- (void) resumeWaitingTorrents:         (id) sender;
+- (void) resumeTorrentsNoWait:          (NSArray *) torrents;
+
+- (void) stopSelectedTorrents:      (id) sender;
+- (void) stopAllTorrents:           (id) sender;
+- (void) stopTorrents:              (NSArray *) torrents;
+
+- (void) removeTorrents: (NSArray *) torrents
+        deleteData: (BOOL) deleteData deleteTorrent: (BOOL) deleteData;
+- (void) removeSheetDidEnd: (NSWindow *) sheet returnCode: (int) returnCode
+                        contextInfo: (NSDictionary *) dict;
+- (void) confirmRemoveTorrents: (NSArray *) torrents
+        deleteData: (BOOL) deleteData deleteTorrent: (BOOL) deleteTorrent;
+- (void) removeNoDelete:                (id) sender;
+- (void) removeDeleteData:              (id) sender;
+- (void) removeDeleteTorrent:           (id) sender;
+- (void) removeDeleteDataAndTorrent:    (id) sender;
+
+- (void) copyTorrentFile: (id) sender;
+- (void) copyTorrentFileForTorrents: (NSMutableArray *) torrents;
+- (void) saveTorrentCopySheetClosed: (NSSavePanel *) panel returnCode: (int) code
+            contextInfo: (NSMutableArray *) torrents;
+
+- (void) revealFile: (id) sender;
+
+- (void) showPreferenceWindow: (id) sender;
+
+- (void) makeWindowKey;
+- (void) showInfo: (id) sender;
+- (void) setInfoTab: (id) sender;
+
+- (void) showMessageWindow: (id) sender;
+
+- (void) updateControlTint: (NSNotification *) notification;
+
+- (void) updateUI: (NSTimer *) timer;
+- (void) torrentFinishedDownloading: (NSNotification *) notification;
+- (void) updateTorrentHistory;
+
+- (void) sortTorrents;
+- (void) sortTorrentsIgnoreSelected;
+- (void) setSort: (id) sender;
+- (void) applyFilter: (id) sender;
+- (void) setFilter: (id) sender;
+- (void) switchFilter: (id) sender;
+
+- (void) applySpeedLimit: (id) sender;
+- (void) toggleSpeedLimit: (id) sender;
+- (void) autoSpeedLimitChange: (NSNotification *) notification;
+- (void) autoSpeedLimit: (NSTimer *) timer;
+
+- (void) setLimitGlobalEnabled: (id) sender;
+- (void) setQuickLimitGlobal: (id) sender;
+
+- (void) setQuickRatioGlobal: (id) sender;
+
+- (void) checkWaitingForStopped: (NSNotification *) notification;
+- (void) checkToStartWaiting: (Torrent *) finishedTorrent;
+- (void) torrentStartSettingChange: (NSNotification *) notification;
+- (void) globalStartSettingChange: (NSNotification *) notification;
+
+- (void) torrentStoppedForRatio: (NSNotification *) notification;
+
+- (void) attemptToStartAuto: (Torrent *) torrent;
+- (void) attemptToStartMultipleAuto: (NSArray *) torrents;
+
+- (void) changeAutoImport;
+- (void) checkAutoImportDirectory;
+
+- (void) sleepCallBack: (natural_t) messageType argument: (void *) messageArgument;
+
+- (void) toggleSmallView: (id) sender;
+
+- (void) toggleStatusBar: (id) sender;
+- (void) showStatusBar: (BOOL) show animate: (BOOL) animate;
+- (void) toggleFilterBar: (id) sender;
+- (void) showFilterBar: (BOOL) show animate: (BOOL) animate;
+
+- (void) toggleAdvancedBar: (id) sender;
+
+- (void) doNothing: (id) sender; //needed for menu items that use bindings with no associated action
+
+- (void) resetDockBadge: (NSNotification *) notification;
+
+- (void) setWindowSizeToFit;
+- (NSRect) sizedWindowFrame;
+
+- (void) showMainWindow:    (id) sender;
+- (void) linkHomepage:      (id) sender;
+- (void) linkForums:        (id) sender;
+
+- (void) prepareForUpdate:  (NSNotification *) notification;
+
+@end
+
+#endif
