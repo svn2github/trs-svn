@@ -1,0 +1,72 @@
+{
+    IBClasses = (
+        {
+            CLASS = FileTableView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {fContextMenu = NSMenu; }; 
+            SUPERCLASS = NSTableView; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                revealDataFile = id; 
+                revealFile = id; 
+                revealTorrentFile = id; 
+                setRatioCheck = id; 
+                setRatioLimit = id; 
+            }; 
+            CLASS = InfoWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                fCommentView = NSTextView; 
+                fCompletedFromTrackerField = NSTextField; 
+                fConnectedPeersField = NSTextField; 
+                fCreatorField = NSTextField; 
+                fDataLocationField = NSTextField; 
+                fDateCreatedField = NSTextField; 
+                fDateStartedField = NSTextField; 
+                fDownloadedTotalField = NSTextField; 
+                fDownloadedValidField = NSTextField; 
+                fDownloadingFromField = NSTextField; 
+                fFileTable = NSTableView; 
+                fFileTableStatusField = NSTextField; 
+                fHashField = NSTextField; 
+                fImageView = NSImageView; 
+                fLeechersField = NSTextField; 
+                fNameField = NSTextField; 
+                fPeerTable = NSTableView; 
+                fPiecesField = NSTextField; 
+                fPiecesView = PiecesView; 
+                fRatioField = NSTextField; 
+                fRatioLimitField = NSTextField; 
+                fRatioMatrix = NSMatrix; 
+                fRevealDataButton = NSButton; 
+                fRevealTorrentButton = NSButton; 
+                fSeedersField = NSTextField; 
+                fSizeField = NSTextField; 
+                fStateField = NSTextField; 
+                fSwarmSpeedField = NSTextField; 
+                fTabView = NSTabView; 
+                fTorrentLocationField = NSTextField; 
+                fTrackerField = NSTextField; 
+                fUploadedTotalField = NSTextField; 
+                fUploadingToField = NSTextField; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = NSSegmentedControl; LANGUAGE = ObjC; SUPERCLASS = NSControl; }, 
+        {
+            CLASS = PiecesImageView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {fPiecesView = PiecesView; }; 
+            SUPERCLASS = NSImageView; 
+        }, 
+        {
+            CLASS = PiecesView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {fImageView = NSImageView; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}
