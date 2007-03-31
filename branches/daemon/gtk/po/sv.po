@@ -1,0 +1,433 @@
+# $Id$
+#
+# Swedish translation of Transmission.
+# Copyright (C) 2007 Free Software Foundation, Inc.
+# This file is distributed under the same license as the transmission package.
+# Daniel Nylander <po@danielnylander.se>, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: transmission\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-06-18 00:33-0700\n"
+"PO-Revision-Date: 2007-02-15 00:29+0100\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: conf.c:95 conf.c:374
+#, c-format
+msgid ""
+"Failed to open the file %s for writing:\n"
+"%s"
+msgstr ""
+"Misslyckades med att öppna filen %s för skrivning:\n"
+"%s"
+
+#: conf.c:110
+#, c-format
+msgid "Another copy of %s is already running."
+msgstr "En annan kopia av %s kör redan."
+
+#: conf.c:113
+#, c-format
+msgid ""
+"Failed to lock the file %s:\n"
+"%s"
+msgstr ""
+"Misslyckades med att låsa filen %s:\n"
+"%s"
+
+#: conf.c:136 dialogs.c:137
+#, c-format
+msgid ""
+"Failed to create the directory %s:\n"
+"%s"
+msgstr ""
+"Misslyckades med att skapa katalogen %s:\n"
+"%s"
+
+#: conf.c:209
+#, c-format
+msgid ""
+"Failed to open the file %s for reading:\n"
+"%s"
+msgstr ""
+"Misslyckades med att öppna filen %s för läsning:\n"
+"%s"
+
+#: conf.c:216
+#, c-format
+msgid ""
+"Error while reading from the file %s:\n"
+"%s"
+msgstr ""
+"Fel vid läsning från filen %s:\n"
+"%s"
+
+#: conf.c:388
+#, c-format
+msgid ""
+"Error while writing to the file %s:\n"
+"%s"
+msgstr ""
+"Fel vid skrivning till filen %s:\n"
+"%s"
+
+#: conf.c:394
+#, c-format
+msgid ""
+"Failed to rename the file %s to %s:\n"
+"%s"
+msgstr ""
+"Misslyckades med att byta namn på filen %s till %s:\n"
+"%s"
+
+#: dialogs.c:174
+#, c-format
+msgid "%s Preferences"
+msgstr "Inställningar för %s"
+
+#: dialogs.c:183 dialogs.c:407
+msgid "Choose a download directory"
+msgstr "Välj en hämtningskatalog"
+
+#: dialogs.c:192
+msgid "_Limit download speed"
+msgstr "_Begränsa hämtningshastighet"
+
+#: dialogs.c:194
+msgid "Maximum _download speed:"
+msgstr "Maximal _hämtningshastighet:"
+
+#: dialogs.c:196
+msgid "Li_mit upload speed"
+msgstr "Be_gränsa sändningshastighet"
+
+#: dialogs.c:198
+msgid "Maximum _upload speed:"
+msgstr "Maximal _sändningshastighet:"
+
+#. directory label and chooser
+#: dialogs.c:246
+msgid "Download di_rectory:"
+msgstr "Hämtningskata_log:"
+
+#. port label and entry
+#: dialogs.c:255
+msgid "Listening _port:"
+msgstr "Lyssnings_port:"
+
+#: dialogs.c:268
+msgid "Use the torrent file where it is"
+msgstr "Används torrent-filen där den finns"
+
+#: dialogs.c:271
+msgid "Keep a copy of the torrent file"
+msgstr "Behåll en kopia av torrent-filen"
+
+#: dialogs.c:274
+msgid "Keep a copy and remove the original"
+msgstr "Behåll en kopia och ta bort originalet"
+
+#. std
+#: dialogs.c:277
+msgid "For torrents added _normally:"
+msgstr "För torrent-filer som lagts till _normalt:"
+
+#: dialogs.c:291
+msgid ""
+"For torrents added e_xternally\n"
+"(via the command-line):"
+msgstr ""
+"För torrent-filer som lagts till e_xternt\n"
+"(via kommandoraden):"
+
+#: dialogs.c:394
+msgid "Add a Torrent"
+msgstr "Lägg till en torrent"
+
+#: dialogs.c:401
+msgid "Automatically _start torrent"
+msgstr "Sta_rta torrent automatiskt"
+
+#: dialogs.c:403
+msgid "Use alternate _download directory"
+msgstr "Använd alternativ _hämtningskatalog"
+
+#: dialogs.c:432
+msgid "Torrent files"
+msgstr "Torrent-filer"
+
+#: dialogs.c:434
+msgid "All files"
+msgstr "Alla filer"
+
+#: dialogs.c:542
+#, c-format
+msgid "%s Properties"
+msgstr "Egenskaper för %s"
+
+#: dialogs.c:567 dialogs.c:570
+msgid "Tracker:"
+msgstr "Tracker:"
+
+#: dialogs.c:572
+msgid "Announce:"
+msgstr "Annonsering:"
+
+#: dialogs.c:573
+msgid "Piece Size:"
+msgstr "Delstorlek:"
+
+#: dialogs.c:574
+msgid "Pieces:"
+msgstr "Delar:"
+
+#: dialogs.c:575
+msgid "Total Size:"
+msgstr "Total storlek:"
+
+#: dialogs.c:577 dialogs.c:579
+msgid "Seeders:"
+msgstr "Distributörer:"
+
+#: dialogs.c:577 dialogs.c:581
+msgid "?"
+msgstr "?"
+
+#: dialogs.c:581 dialogs.c:583
+msgid "Leechers:"
+msgstr "Reciprokörer:"
+
+#: dialogs.c:587
+msgid "Directory:"
+msgstr "Katalog:"
+
+#: dialogs.c:588
+msgid "Downloaded:"
+msgstr "Hämtat:"
+
+#: dialogs.c:589
+msgid "Uploaded:"
+msgstr "Skickat:"
+
+#: ipc.c:208
+#, c-format
+msgid ""
+"Failed to set up socket:\n"
+"%s"
+msgstr ""
+"Misslyckades med att sätta upp uttag:\n"
+"%s"
+
+#: ipc.c:229
+#, c-format
+msgid "failed to create socket: %s\n"
+msgstr "misslyckades med att skapa uttag: %s\n"
+
+#: ipc.c:238
+#, c-format
+msgid "failed to connect to %s: %s\n"
+msgstr "misslyckades med att ansluta till %s: %s\n"
+
+#: ipc.c:403
+#, c-format
+msgid "bad IPC protocol version\n"
+msgstr "felaktig version av IPC-protokollet\n"
+
+#: main.c:150
+msgid "Add"
+msgstr "Lägg till"
+
+#: main.c:151
+msgid "Add a new torrent"
+msgstr "Lägg till en ny torrent"
+
+#: main.c:152
+msgid "Start"
+msgstr "Starta"
+
+#: main.c:154
+msgid "Start a torrent that is not running"
+msgstr "Starta en torrent som inte kör"
+
+#: main.c:155
+msgid "Stop"
+msgstr "Stoppa"
+
+#: main.c:157
+msgid "Stop a torrent that is running"
+msgstr "Stoppa en torrent som kör"
+
+#: main.c:158
+msgid "Remove"
+msgstr "Ta bort"
+
+#: main.c:159
+msgid "Remove a torrent"
+msgstr "Ta bort en torrent"
+
+#: main.c:160
+msgid "Properties"
+msgstr "Egenskaper"
+
+#: main.c:161
+msgid "Show additional information about a torrent"
+msgstr "Visa ytterligare information om en torrent"
+
+#: main.c:162
+msgid "Preferences"
+msgstr "Inställningar"
+
+#: main.c:163
+msgid "Customize application behavior"
+msgstr "Anpassa programmets beteende"
+
+#: main.c:200
+msgid "Transmission"
+msgstr "Transmission"
+
+#: main.c:453
+msgid "Name"
+msgstr "Namn"
+
+#. this string is only used to determing the size of the progress bar
+#: main.c:461
+msgid "  fnord    fnord  "
+msgstr "  fnord    fnord  "
+
+#: main.c:464
+msgid "Progress"
+msgstr "Förlopp"
+
+#: main.c:700
+#, c-format
+msgid "Checking existing files (%.1f%%)"
+msgstr "Kontrollerar befintliga filer (%.1f%%)"
+
+#: main.c:703
+#, c-format
+msgid "Finishing in --:--:-- (%.1f%%)"
+msgstr "Färdig om --:--:-- (%.1f%%)"
+
+#: main.c:705
+#, c-format
+msgid "Finishing in %02i:%02i:%02i (%.1f%%)"
+msgstr "Färdig om %02i:%02i:%02i (%.1f%%)"
+
+#: main.c:709
+#, c-format
+msgid "Seeding, uploading to %d of %d peer"
+msgid_plural "Seeding, uploading to %d of %d peers"
+msgstr[0] "Distribuerar, sänder till %d av %d part"
+msgstr[1] "Distribuerar, sänder till %d av %d parter"
+
+#: main.c:713
+msgid "Stopping..."
+msgstr "Stoppar..."
+
+#: main.c:715
+#, c-format
+msgid "Stopped (%.1f%%)"
+msgstr "Stoppad (%.1f%%)"
+
+#: main.c:723
+msgid "Error: "
+msgstr "Fel: "
+
+#: main.c:727
+#, c-format
+msgid "Downloading from %i of %i peer"
+msgid_plural "Downloading from %i of %i peers"
+msgstr[0] "Hämtar från %i av %i part"
+msgstr[1] "Hämtar från %i av %i parter"
+
+#: main.c:761
+#, c-format
+msgid ""
+"Ratio: %s\n"
+"UL: %s/s"
+msgstr ""
+"Ratio: %s\n"
+"Sändning: %s/s"
+
+#: main.c:764
+#, c-format
+msgid ""
+"DL: %s/s\n"
+"UL: %s/s"
+msgstr ""
+"Hämtat: %s/s\n"
+"Skickat: %s/s"
+
+#: main.c:810
+#, c-format
+msgid "     Total DL: %s/s     Total UL: %s/s"
+msgstr "     Totalt hämtat: %s/s     Total skickat: %s/s"
+
+#: main.c:1081
+#, c-format
+msgid ""
+"Failed to load torrent file:\n"
+"%s"
+msgid_plural ""
+"Failed to load torrent files:\n"
+"%s"
+msgstr[0] ""
+"Misslyckades med att läsa in torrent-fil:\n"
+"%s"
+msgstr[1] ""
+"Misslyckades med att läsa in torrent-filer:\n"
+"%s"
+
+#: tr_torrent.c:290
+#, c-format
+msgid "%s: not a valid torrent file"
+msgstr "%s: inte en giltig torrent-fil"
+
+#: tr_torrent.c:293
+#, c-format
+msgid "%s: torrent is already open"
+msgstr "%s: torrent är redan öppnad"
+
+#: util.c:67
+msgid "B"
+msgstr "B"
+
+#: util.c:67
+msgid "KiB"
+msgstr "KiB"
+
+#: util.c:67
+msgid "MiB"
+msgstr "MiB"
+
+#: util.c:67
+msgid "GiB"
+msgstr "GiB"
+
+#: util.c:67
+msgid "TiB"
+msgstr "TiB"
+
+#: util.c:67
+msgid "PiB"
+msgstr "PiB"
+
+#: util.c:67
+msgid "EiB"
+msgstr "EiB"
+
+#: util.c:92
+msgid "N/A"
+msgstr "-"
+
+#. this is a UTF-8 infinity symbol
+#: util.c:96
+msgid "∞"
+msgstr "∞"
+
