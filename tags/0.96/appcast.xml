@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>Transmission Appcast</title>
+    <link>http://transmission.m0k.org/appcast.xml</link>
+    <description>Most recent version available.</description>
+    <language>en</language>
+    <pubDate>Tue, 23 Oct 2007 23:20:00 -0400</pubDate>
+    <lastBuildDate>Mon, 10 Dec 2007 18:00:00 -0400</lastBuildDate>
+
+	<item>
+      <title>Transmission 0.96 Released</title>
+      <description><![CDATA[
+<h4>Core Changes:</h4>
+<ul>
+ <li>Fix 0.95 data corruption error</li>
+ <li>Fix 0.95 bug that broke UPnP</li>
+</ul>
+<h4>Mac Changes:</h4>
+<ul>
+ <li>Fix bug where dragging non-torrent files over the main window could cause excessive memory use</li>
+</ul>
+
+<h4>TRANSMISSION 0.72 AND EARLIER: COMPLETE YOUR DOWNLOADS BEFORE UPGRADING OR YOU WILL LOSE DATA!</h4>]]></description>
+      <pubDate>Mon, 10 Dec 2007 18:00:00 -0400</pubDate>
+      <enclosure sparkle:version="4122" sparkle:shortVersionString="0.96" url="http://mirrors.m0k.org/transmission/files/Transmission-0.96.dmg" length="2407079" type="application/octet-stream"/>
+    </item>
+    
+  </channel>
+</rss>
