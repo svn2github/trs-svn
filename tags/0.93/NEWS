@@ -1,0 +1,223 @@
+NEWS file for Transmission <http://transmission.m0k.org/>
+
+0.93 (2007/11/12)
+- All Platforms:
+   + Fix "router death" bug that impaired internet connectivity
+   + Fix bug that could cause good peer connections to be lost
+   + Tweak request queue code to improve download speeds
+   + Better handling of very large files on 32bit systems
+   + Consume less battery power on laptops
+   + Fix minor IPC parsing error
+
+0.92 (2007/11/05)
+- All Platforms:
+   + Fix 0.90 data corruption bugs
+   + Fix 0.90 possible delay when quitting
+   + Fix 0.90 small memory leaks
+- OS X:
+   + Leopard: Fix bug with typing values in Inspector->Options
+   + Leopard: Fix bug with toggling Minimal View
+- GTK
+   + Better support for large files on some Linux systems
+   + Fix localization error in torrent inspector's dates
+
+0.91 (2007/10/28)
+- All Platforms:
+   + Fix 0.90 speed limits
+   + Fix 0.90 problems announcing to some trackers
+   + Fix 0.90 socket connection leak
+   + Fix 0.90 IPC crash
+   + Fix 0.90 cache bug that could cause "verify local files" to fail
+   + Fix 0.90 build errors on OpenBSD and on older C compilers
+- OS X:
+   + Fix a crash caused by custom sound files
+   + Add Dutch localization, re-add Russian localization, fix Korean localization
+- GTK:
+   + Fix 0.90 packaging errors
+   + Fix 0.90 crash-on-start with assertion failure: "destination != (void*)0"
+
+0.90 (2007/10/23)
+ - Encryption support, with option to ignore unencrypted peers
+ - Ban peers that send too much bad data
+ - Only report downloaded, verified good pieces in tracker `download' field
+ - Improved compliance with BitTorrent spec
+ - MSE Tracker Extension support
+ - Significant rewrite of the libtransmission back-end
+ - Icon enhanced to support size of 512 x 512
+ - OS X:
+   + Per-torrent action menu
+   + Redesigned inspector with additional statistics and ability to be resized vertically in Peers and Files tabs
+   + Redesigned message log
+   + Optimizations to decrease memory usage
+   + Sort and filter by tracker
+   + Various smaller interface additions and improvements
+ - GTK:
+   + Various interface improvements
+   + Better compliance with the Gnome interface guidelines
+
+0.82 (2007/09/09)
+ - Fixed bug that could limit transfer speeds
+ - Fixed bug that corrupted torrents > 4 GB
+ - Fixed bug that could allow bad peers to send too many pieces
+ - For peers supporting both Azureus's and LibTorrent's extensions, allow negotiation to decide which to use
+ - Other minor fixes
+
+0.81 (2007/08/22)
+ - Fix 0.80 assertion crashes
+ - Fix a bug that miscounted how many peers Transmission wants connected
+ - Correct incorrect error messages
+ - Memory leaks fixed
+ - OS X:
+   + Multiple fixes to creating torrents and adding new torrents
+   + Updated Russian and Spanish translations
+ - GTK:
+   + Updated Dutch, Portuguese, French, and Slovakian translations
+ - CLI:
+   + Better support for cli-driven torrent creation
+   + Fix a bug that misparsed command-line arguments
+
+0.80 (2007/08/07)
+ - Ability to selectively download and prioritize files
+ - Torrent file creation
+ - Speed and CPU load improvements
+ - Fix to UPnP
+ - Rechecking torrents is now done one-at-a-time to avoid heavy disk load
+ - Better rechecking of torrents that have many files
+ - Many miscellaneous improvements and bugfixes
+ - Partial licensing change -- see the LICENSE file for details
+ - OS X:
+   + Overlay when dragging torrent files, URLs, and data files onto window
+   + Ability to set an amount of time to consider a transfer stalled
+   + More progress bar colors
+   + Various smaller interface improvements
+   + Italian, Korean, and Russian translations
+ - GTK:
+   + Added Torrent Inspector dialog
+   + Added Update Tracker button
+   + Various smaller interface improvements
+
+0.72 (2007/04/30)
+ - Reset download/upload amounts when sending "started"
+ - Fix rare XML parsing bug
+
+0.71 (2007/04/23)
+ - Send port info when sending requests
+ - Calculate ratio differently when seeding without ever downloading
+ - Add additional error messages and debug info
+ - Improved UPnP support
+ - OS X:
+   + Fix error when using default incomplete folder
+   + Disable the stop ratio once it is reached (while seeding)
+   + Small interface adjustments
+
+0.70 (2007/04/18)
+ - New icon
+ - Automatic port mapping (NAT-PMP and UPnP IGD)
+ - Peer exchange (PEX) compatible with Azureus and uTorrent
+ - Multitracker support
+ - Better handling of tracker announce interval
+ - Fixes bug where absurdly huge upload/download totals could be sent
+ - Automatic tracker scraping
+ - Cache connected peers
+ - Many miscellaneous bugfixes and small improvements
+ - OS X:
+   + Requires 10.4 Tiger or newer
+   + Download and seeding queues that can be user-ordered
+   + Speed Limit: Second set of bandwidth limits that can be toggled or 
+     scheduled
+   + Individual torrent bandwidth limits
+   + Separate complete and incomplete download folders
+   + Filter and search bar
+   + Expanded Inspector with many additional views and stats
+   + Fragment status view in Inspector shows downloaded or availability
+   + Watch folder to auto add torrent files
+   + Auto resizing of the main window
+   + Minimal view to take up less space
+   + Seeding bar shows progress in finishing seeding
+   + Sounds when downloading and seeding complete
+   + Warnings for directory unavailable and not enough space
+   + Message log window
+   + New toolbar icons
+   + Built-in help files
+   + French, Spanish, German, and Greek translations
+ - GTK+:
+   + Adds Spanish, Polish, Russian, Bulgarian, Romanian, Swedish, and
+     Finnish translations
+   + Message window
+   + Better window manager integration
+   + Add file view to properties dialog
+
+0.6.1 (2006/06/25)
+ - OS X:
+   + Fixes a bug in the updater that could cause repeated hits to the
+     appcast
+ - GTK+:
+   + Fixes drag-and-drop
+   + Adds Italian and French translations
+
+0.6 (2006/06/21)
+ - Ability to limit download rate
+ - Automatic banning of peers who send bad data
+ - Can keep a copy of the torrent file so the original can be deleted
+ - Many bugfixes
+ - OS X:
+   + Reworked interface
+   + Rate limits can be changed directly from the main window
+   + Ability to automatically stop seeding at a given ratio
+   + Allows sorting of the tranfers list
+   + Extended Info Inspector
+   + Automatic updating with Sparkle
+ - GTK+:
+   + Add torrents via command line. If Transmission is already running,
+       add them to running copy
+   + Improved long filename handling
+
+0.5 (2006/02/11)
+ - Only uses one port for all torrents
+ - Rewritten choking algorithm
+ - Remembers download and upload sizes from one launch to another
+ - New GTK+ interface
+ - New BeOS interface
+ - OS X: Dock badging
+ - OS X: Shows the file icon in the list
+ - OS X: Shows ratio once download is completed
+ - OS X: Automatic check for update
+ - OS X: Fixes a display bug on Intel Macs
+
+0.4 (2005/11/18)
+ - Uses less CPU downloading torrents with many pieces
+ - The UI could freeze when the hard drive was having a hard time - fixed
+ - Fixes for difficult trackers, which require a 'key' parameter or a
+     User Agent field
+ - OS X: Cleaner look, unified toolbar
+ - OS X: Added a document icon for torrent files
+ - OS X: Added a Pause/Resume button for each torrent, and a
+    "Reveal in Finder" button
+ - OS X: Added a contextual menu
+ - OS X: Sometimes torrents kept "Stopping..." forever - fixed
+ - OS X: Several minor improvements or fixes: allows column reordering,
+    fixed resizing on Panther, remember the position of the window,
+    fixed display of Unicode filenames, added menubar items and
+    keyboard shortcuts, made the simple progress bar switch to green
+    when seeding
+
+0.3 (2005/10/19)
+ - Fixed "Sometimes sends incorrect messages and looses peers"
+ - Fixed "Crashes with many torrents or torrents with many files"
+ - Enhancements in the "End game" mode
+ - Is nicer to the trackers
+ - Asks for the rarest pieces first
+ - OS X: Universal binary for PPC and x86
+ - OS X: Fixed "Progress increases every time I pause then resume"
+ - OS X: Fixed "Sometimes crashes at exit"
+ - OS X: Cleaner icon
+ - OS X: Show all sizes in human readable form
+ - OS X: Keep downloading in the background when the window is closed
+ - Miscellaneous bugfixes and internal enhancements
+
+0.2 (2005/09/22)
+ - Bugfixes
+ - OS X: Users can now choose where the downloads are sent
+
+0.1 (2005/09/15)
+ - First version

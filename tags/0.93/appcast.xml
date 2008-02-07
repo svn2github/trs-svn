@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>Transmission Appcast</title>
+    <link>http://transmission.m0k.org/appcast.xml</link>
+    <description>Most recent version available.</description>
+    <language>en</language>
+    <pubDate>Tue, 23 Oct 2007 23:20:00 -0400</pubDate>
+    <lastBuildDate>Tue, 12 Nov 2007 16:22:00 -0400</lastBuildDate>
+
+	<item>
+      <title>Transmission 0.93 Released</title>
+      <description><![CDATA[
+<h4>Transmission Changes:</h4>
+<ul>
+ <li>Fix "router death" bug that impaired internet connectivity</li>
+ <li>Fix bug that could cause good peer connections to be lost</li>
+ <li>Tweak request queue code to improve download speeds</li>
+ <li>Better handling of very large files on 32bit systems</li>
+ <li>Consume less battery power on laptops</li>
+ <li>Fix minor IPC parsing error</li>
+</ul>
+
+<h4>TRANSMISSION 0.72 AND EARLIER: COMPLETE YOUR DOWNLOADS BEFORE UPGRADING OR YOU WILL LOSE DATA!</h4>]]></description>
+      <pubDate>Tue, 12 Nov 2007 16:22:00 -0400</pubDate>
+      <enclosure sparkle:version="3811" sparkle:shortVersionString="0.93" url="http://mirrors.m0k.org/transmission/files/Transmission-0.93.dmg" length="2142946" type="application/octet-stream"/>
+    </item>
+    
+  </channel>
+</rss>

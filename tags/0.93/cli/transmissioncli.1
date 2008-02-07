@@ -1,0 +1,123 @@
+.\"
+.\"  Copyright (c) Deanna Phillips <deanna@sdf.lonestar.org>
+.\" 
+.\"  Permission to use, copy, modify, and distribute this software for any
+.\"  purpose with or without fee is hereby granted, provided that the above
+.\"  copyright notice and this permission notice appear in all copies.
+.\" 
+.\"  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+.\"  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+.\"  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+.\"  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+.\"  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+.\"  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+.\"  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+.\"
+.Dd April 18, 2007
+.Dt TRANSMISSIONCLI 1
+.Os
+.Sh NAME
+.Nm transmissioncli
+.Nd a bittorrent client
+.Sh SYNOPSIS
+.Nm transmissioncli
+.Bk -words
+.Fl h
+.Nm
+.Op Fl v Ar level
+.Fl i
+.Ar torrent-file
+.Nm
+.Op Fl v Ar level
+.Fl s
+.Ar torrent-file
+.Nm
+.Op Fl v Ar level
+.Op Fl p Ar port
+.Op Fl d Ar download-rate
+.Op Fl u Ar upload-rate
+.Op Fl f Ar script
+.Op Fl n
+.Ar torrent-file
+.Nm
+.Op Fl v Ar level
+.Fl c Ar source-file
+.Fl a Ar announce-url
+.Op Fl p Ar 1
+.Op Fl m Ar comment
+.Ar output-file
+.Ek
+.Sh DESCRIPTION
+The
+.Nm
+program is a lightweight, command-line BitTorrent client with
+scripting capabilities.
+.Pp
+The options are as follows:
+.Bl -tag -width Ds
+.lt Fl c, Fl -create-from Ar source-file
+Create torrent from the specified source file.
+.lt Fl a, Fl -announce Ar announce-url
+Specifies the Announceurl the new torrent will use. Can only be
+used in conjunction with -c or --create-from.
+.lt Fl r, Fl -private
+Sets the private flag for the new torrent. Can only be used in
+conjunction with -c or --create-from.
+.lt Fl m, Fl -comment Ar comment-text
+This optional parameter adds a comment to the new torrent. Can only
+be used in conjunction with -c or --create-from.
+.It Fl h, Fl -help
+Prints a short usage summary.
+.It Fl i, Fl -info
+Shows information from the specified torrent file, such as the
+cryptographic hash, the tracker, announcement, file size and file
+name.
+.It Fl s, -scrape
+Prints the number of seeders and leechers for the specified torrent
+file, and exits.
+.It Fl v, -verbose Ar level
+Sets debugging options.  The current range is 0-2, with the highest
+level producing the most output.  The default is 0.
+.It Fl n, Fl -nat-traversal
+Attempt to use the NAT-PMP and UPnP IGD protocols to establish a port
+mapping for allowing incoming peer connections.
+.It Fl p, -port Ar port
+Specifies an alternate port for the client to listen on.  The default is
+9090.
+.It Fl u, -upload Ar upload-rate
+Specifies the maximum upload rate in kB/s, which defaults to 20.  The
+level -1 may be used for unlimited uploads.
+.It Fl d, -download Ar download-rate
+Specifies the maximum download rate in kB/s, which defaults to -1 for
+no download limit.
+.It Fl f, -finish Ar script
+Specifies a shell script to be executed upon successful download.
+.Sh SIGNALS
+In addition to these options, sending
+.Nm
+a SIGHUP signal can ask the tracker for more peers.
+.El
+.Sh FILES
+.Bl -tag -width Ds -compact
+.It ~/.transmission
+Directory where
+.Nm
+keeps torrent information for future seeding and resume operations.
+.El
+.Sh AUTHORS
+The
+.Nm
+program was written by 
+.An -nosplit
+.An Eric Petit Aq titer@m0k.org ,
+.An Josh Elsasser Aq josh@elsasser.org ,
+.An Charles Kerr Aq charles@rebelbase.com ,
+and
+.An Mitchell Livingston Aq livings124@gmail.com .
+.Sh SEE ALSO
+.Xr transmission 1 ,
+.Xr transmission-daemon 1 ,
+.Xr transmission-proxy 1 ,
+.Xr transmission-remote 1
+.Pp
+http://transmission.m0k.org
