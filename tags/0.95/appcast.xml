@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>Transmission Appcast</title>
+    <link>http://transmission.m0k.org/appcast.xml</link>
+    <description>Most recent version available.</description>
+    <language>en</language>
+    <pubDate>Tue, 23 Oct 2007 23:20:00 -0400</pubDate>
+    <lastBuildDate>Sun, 25 Nov 2007 19:05:00 -0400</lastBuildDate>
+
+	<item>
+      <title>Transmission 0.94 Released</title>
+      <description><![CDATA[
+<h4>Transmission Changes:</h4>
+<ul>
+ <li>Faster average download speeds</li>
+ <li>Automatically ban peers that send us too many corrupt pieces</li>
+ <li>Fix a crash that occurred if a peer sent us an incomplete message</li>
+ <li>Fix portmapping crash</li>
+ <li>Fix bug that left files open after their torrents were stopped</li>
+ <li>Fix 0.93 file permissions bug</li>
+ <li>Fix tracker redirect error</li>
+ <li>Fix LTEP PEX bug</li>
+</ul>
+
+<h4>TRANSMISSION 0.72 AND EARLIER: COMPLETE YOUR DOWNLOADS BEFORE UPGRADING OR YOU WILL LOSE DATA!</h4>]]></description>
+      <pubDate>Sun, 25 Nov 2007 19:05:00 -0400</pubDate>
+      <enclosure sparkle:version="3959" sparkle:shortVersionString="0.94" url="http://mirrors.m0k.org/transmission/files/Transmission-0.94.dmg" length="2405004" type="application/octet-stream"/>
+    </item>
+    
+  </channel>
+</rss>
