@@ -1,0 +1,2080 @@
+# Transmission
+# Copyright (C) 2007
+# This file is distributed under the same license as the Transmission package.
+# Calorì Alessandro <axelgenus@gmail.com>, 2007.
+# Milo Casagrande <milo_casagrande@yahoo.it>, 2007
+#
+# Piccolo glossario:
+#
+# tracker -> serve traccia (dalla voce BitTorrent di wikipedia)
+# seeder -> fonti complete
+# leecher -> fonti parziali
+# swarm -> è l'insieme di seeder e peer
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: transmission 1.02\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-03-19 19:09-0500\n"
+"PO-Revision-Date: 2008-02-05 23:36+0100\n"
+"Last-Translator: Milo Casagrande <milo_casagrande@yahoo.it>\n"
+"Language-Team: Italian <tp@lists.linux.it>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../gtk/actions.c:47
+msgid "Sort by _Activity"
+msgstr "Ordina per _attività"
+
+#: ../gtk/actions.c:48
+msgid "Sort by _Name"
+msgstr "Ordina per _nome"
+
+#: ../gtk/actions.c:49
+msgid "Sort by _Progress"
+msgstr "Ordina per a_vanzamento"
+
+#: ../gtk/actions.c:50
+msgid "Sort by _State"
+msgstr "Ordina per _stato"
+
+#: ../gtk/actions.c:51
+msgid "Sort by _Tracker"
+msgstr "Ordina per server tra_ccia"
+
+#: ../gtk/actions.c:68
+#, fuzzy
+msgid "_Main Window"
+msgstr "_Mostra finestra principale"
+
+#: ../gtk/actions.c:70
+#, fuzzy
+msgid "Message _Log"
+msgstr "Registro dei messaggi"
+
+#: ../gtk/actions.c:84
+msgid "_Minimal View"
+msgstr "Vista _minimale"
+
+#: ../gtk/actions.c:86
+msgid "_Reverse Sort Order"
+msgstr "_Ordinamento inverso"
+
+#: ../gtk/actions.c:88
+#, fuzzy
+msgid "_Filterbar"
+msgstr "Mostra barra dei _filtri"
+
+#: ../gtk/actions.c:90
+#, fuzzy
+msgid "_Statusbar"
+msgstr "Mostra _barra di stato"
+
+#: ../gtk/actions.c:92
+#, fuzzy
+msgid "_Toolbar"
+msgstr "Mostra barra degli s_trumenti"
+
+#: ../gtk/actions.c:97
+msgid "_Torrent"
+msgstr "_Torrent"
+
+#: ../gtk/actions.c:98
+msgid "_View"
+msgstr "_Visualizza"
+
+# (ndt) non trovo dove compaia...
+#: ../gtk/actions.c:99
+msgid "_Sort Torrents By"
+msgstr "_Ordina torrent per"
+
+#: ../gtk/actions.c:100
+msgid "_Edit"
+msgstr "_Modifica"
+
+#: ../gtk/actions.c:101
+msgid "_Help"
+msgstr "A_iuto"
+
+# (ndt) titolo finestra
+#: ../gtk/actions.c:102 ../gtk/actions.c:103
+#, fuzzy
+msgid "Open a torrent"
+msgstr "Apri torrent"
+
+#: ../gtk/actions.c:103
+msgid "_Open..."
+msgstr ""
+
+#: ../gtk/actions.c:105
+msgid "_Start"
+msgstr "A_vvia"
+
+#: ../gtk/actions.c:106
+msgid "_Statistics"
+msgstr "_Statistiche"
+
+#: ../gtk/actions.c:108
+msgid "_Verify Local Data"
+msgstr "Verifica _dati locali"
+
+#: ../gtk/actions.c:110
+msgid "_Pause"
+msgstr "_Pausa"
+
+#: ../gtk/actions.c:112
+#, fuzzy
+msgid "_Delete Files and Remove"
+msgstr "De_ttagli"
+
+#: ../gtk/actions.c:113
+msgid "_New..."
+msgstr ""
+
+# (ndt) titolo dialogo
+#: ../gtk/actions.c:114
+#, fuzzy
+msgid "Create a torrent"
+msgstr "Crea nuovo torrent"
+
+#: ../gtk/actions.c:116
+#, fuzzy
+msgid "Close _Window"
+msgstr "_Mostra finestra principale"
+
+#: ../gtk/actions.c:117
+#, fuzzy
+msgid "Close main window"
+msgstr "_Mostra finestra principale"
+
+#: ../gtk/actions.c:119
+msgid "_Quit"
+msgstr "_Esci"
+
+#: ../gtk/actions.c:121
+msgid "Select _All"
+msgstr "_Seleziona tutto"
+
+#: ../gtk/actions.c:123
+msgid "Dese_lect All"
+msgstr "_Deseleziona tutto"
+
+#: ../gtk/actions.c:126
+msgid "_Details"
+msgstr "De_ttagli"
+
+#: ../gtk/actions.c:129
+msgid "Ask Tracker for _More Peers"
+msgstr "Chiedi più peer al server tracc_ia"
+
+#: ../gtk/conf.c:60 ../libtransmission/utils.c:482
+#: ../libtransmission/utils.c:493
+#, fuzzy, c-format
+msgid "Couldn't create \"%s\": %s"
+msgstr "Impossibile creare il socket: %s"
+
+#: ../gtk/conf.c:81 ../libtransmission/fastresume.c:191
+#: ../libtransmission/fdlimit.c:166 ../libtransmission/makemeta.c:208
+#: ../libtransmission/makemeta.c:237 ../libtransmission/metainfo.c:613
+#, c-format
+msgid "Couldn't open \"%s\": %s"
+msgstr ""
+
+#: ../gtk/conf.c:85
+#, fuzzy, c-format
+msgid "%s is already running."
+msgstr "Un'altra istanza di %s è già in esecuzione."
+
+#: ../gtk/details.c:246
+msgid "Address"
+msgstr "Indirizzo"
+
+#: ../gtk/details.c:247
+msgid "Client"
+msgstr "Client"
+
+#. 'percent done' column header. terse to keep the column narrow.
+#: ../gtk/details.c:249
+msgid "%"
+msgstr ""
+
+#. 'download speed' column header. terse to keep the column narrow.
+#: ../gtk/details.c:252
+#, fuzzy
+msgid "Down"
+msgstr "Ric: %s"
+
+#. 'upload speed' column header.  terse to keep the column narrow.
+#: ../gtk/details.c:254
+msgid "Up"
+msgstr ""
+
+#: ../gtk/details.c:255
+msgid "Status"
+msgstr "Stato"
+
+#: ../gtk/details.c:595
+#, fuzzy
+msgid "<b>Availability</b>"
+msgstr "Disponibilità del pezzo"
+
+#: ../gtk/details.c:617
+#, fuzzy
+msgid "<b>Connected Peers</b>"
+msgstr "Peer connessi"
+
+#: ../gtk/details.c:627
+#, fuzzy
+msgid "<b>Seeders:</b>"
+msgstr "Fonti complete"
+
+#: ../gtk/details.c:634
+#, fuzzy
+msgid "<b>Leechers:</b>"
+msgstr "Fonti parziali"
+
+#: ../gtk/details.c:641
+#, fuzzy
+msgid "<b>Completed:</b>"
+msgstr "Completato"
+
+#: ../gtk/details.c:671 ../gtk/makemeta-ui.c:292
+#, fuzzy
+msgid "Details"
+msgstr "De_ttagli"
+
+#. %1$'d is number of pieces
+#. %2$s is how big each piece is
+#: ../gtk/details.c:677
+#, c-format
+msgid "%1$'d Piece @ %2$s"
+msgid_plural "%1$'d Pieces @ %2$s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../gtk/details.c:682
+#, fuzzy
+msgid "Pieces:"
+msgstr "Pezzi"
+
+#: ../gtk/details.c:686
+#, fuzzy
+msgid "Hash:"
+msgstr "Hash"
+
+#: ../gtk/details.c:689
+#, fuzzy
+msgid "Private to this tracker -- PEX disabled"
+msgstr "Privato su questo server traccia"
+
+#: ../gtk/details.c:690
+#, fuzzy
+msgid "Public torrent"
+msgstr "Torrent pubblico"
+
+#: ../gtk/details.c:692
+msgid "Privacy:"
+msgstr ""
+
+#: ../gtk/details.c:704
+#, fuzzy
+msgid "Comment:"
+msgstr "Commento"
+
+#: ../gtk/details.c:708
+msgid "Origins"
+msgstr ""
+
+#: ../gtk/details.c:710 ../gtk/details.c:801 ../gtk/details.c:806
+#, c-format
+msgid "Unknown"
+msgstr ""
+
+#: ../gtk/details.c:711
+#, fuzzy
+msgid "Creator:"
+msgstr "Autore"
+
+#: ../gtk/details.c:715
+#, fuzzy
+msgid "Date:"
+msgstr "Data"
+
+#: ../gtk/details.c:719
+msgid "Location"
+msgstr "Posizione"
+
+#: ../gtk/details.c:723
+#, fuzzy
+msgid "Destination folder:"
+msgstr "Rapporto della sessione"
+
+#: ../gtk/details.c:727
+#, fuzzy
+msgid "Torrent file:"
+msgstr "File torrent"
+
+#. %1$.1f is percent of how much of what we want's been downloaded,
+#. %2$.1f is percent of how much of the whole torrent we've downloaded
+#: ../gtk/details.c:771
+#, c-format
+msgid "%1$.1f%% (%2$.1f%% selected)"
+msgstr ""
+
+#. %1$s is total size of what we've saved to disk
+#. %2$s is how much of it's passed the checksum test
+#: ../gtk/details.c:779
+#, fuzzy, c-format
+msgid "%1$s (%2$s verified)"
+msgstr "%s (verificato %s)"
+
+#: ../gtk/details.c:798 ../gtk/util.c:57 ../gtk/util.c:77
+msgid "None"
+msgstr "Nessuno"
+
+#: ../gtk/details.c:827
+msgid "Transfer"
+msgstr "Trasferimento"
+
+#: ../gtk/details.c:830
+#, fuzzy
+msgid "State:"
+msgstr "Stato"
+
+#: ../gtk/details.c:833
+#, fuzzy
+msgid "Progress:"
+msgstr "Avanzamento"
+
+# (ndt) sembra indichi la quantità disponibile del file
+#. "Have" refers to how much of the torrent we have
+#: ../gtk/details.c:837
+#, fuzzy
+msgid "Have:"
+msgstr "Disponibile"
+
+#: ../gtk/details.c:840 ../gtk/stats.c:104 ../gtk/stats.c:116
+msgid "Downloaded:"
+msgstr "Scaricati:"
+
+#: ../gtk/details.c:843 ../gtk/stats.c:102 ../gtk/stats.c:114
+msgid "Uploaded:"
+msgstr "Inviati:"
+
+#: ../gtk/details.c:847
+#, fuzzy
+msgid "Failed DL:"
+msgstr "Ric. fallita"
+
+#: ../gtk/details.c:850 ../gtk/stats.c:106 ../gtk/stats.c:118
+msgid "Ratio:"
+msgstr "Rapporto:"
+
+#: ../gtk/details.c:853
+#, fuzzy
+msgid "Swarm rate:"
+msgstr "Velocità della rete"
+
+#: ../gtk/details.c:856
+#, fuzzy
+msgid "Error:"
+msgstr "Errore"
+
+#: ../gtk/details.c:860
+#, fuzzy
+msgid "Completion"
+msgstr "Completato"
+
+#: ../gtk/details.c:870
+msgid "Dates"
+msgstr "Date"
+
+#: ../gtk/details.c:873
+#, fuzzy
+msgid "Started at:"
+msgstr "Avviato %d volte"
+
+#: ../gtk/details.c:876
+#, fuzzy
+msgid "Last activity at:"
+msgstr "Ultima attività"
+
+#: ../gtk/details.c:971 ../gtk/tr-prefs.c:314
+msgid "Bandwidth"
+msgstr ""
+
+#: ../gtk/details.c:973 ../gtk/tr-prefs.c:316
+#, fuzzy
+msgid "Limit _download speed (KB/s):"
+msgstr "Limitare velocità di _ricezione (KiB/s):"
+
+#: ../gtk/details.c:986 ../gtk/tr-prefs.c:323
+#, fuzzy
+msgid "Limit _upload speed (KB/s):"
+msgstr "Limitare velocità di _invio (KiB/s):"
+
+#: ../gtk/details.c:1000
+msgid "Peer Connections"
+msgstr "Connessioni ai peer"
+
+#: ../gtk/details.c:1005
+#, fuzzy
+msgid "_Maximum peers:"
+msgstr "Numero massimo di peer connessi:"
+
+#: ../gtk/details.c:1009
+#, fuzzy
+msgid "_Stop seeding at ratio:"
+msgstr "_Fermare la distribuzione al rapporto:"
+
+#: ../gtk/details.c:1064
+#, fuzzy
+msgid "Scrape"
+msgstr "Sicurezza"
+
+#: ../gtk/details.c:1066
+msgid "Last scrape at:"
+msgstr ""
+
+#: ../gtk/details.c:1071 ../gtk/details.c:1098
+#, fuzzy
+msgid "Tracker responded:"
+msgstr "Server traccia"
+
+#: ../gtk/details.c:1076
+msgid "Next scrape in:"
+msgstr ""
+
+#: ../gtk/details.c:1082
+#, fuzzy
+msgid "Announce"
+msgstr "_URL di annuncio"
+
+#: ../gtk/details.c:1090
+#, fuzzy
+msgid "Tracker:"
+msgstr "Server traccia"
+
+#: ../gtk/details.c:1093
+msgid "Last announce at:"
+msgstr ""
+
+#: ../gtk/details.c:1103
+msgid "Next announce in:"
+msgstr ""
+
+#. how long until the tracker will honor user
+#. * pressing the "ask for more peers" button
+#: ../gtk/details.c:1110
+msgid "Manual announce allowed in:"
+msgstr ""
+
+#: ../gtk/details.c:1126 ../gtk/details.c:1138
+msgid "Never"
+msgstr ""
+
+#. %1$s is torrent name
+#. %2$s its file size
+#: ../gtk/details.c:1230
+#, fuzzy, c-format
+msgid "Details for %1$s (%2$s)"
+msgstr "Dettagli per %s (%s)"
+
+#: ../gtk/details.c:1249
+#, fuzzy
+msgid "Activity"
+msgstr "_Attività"
+
+#: ../gtk/details.c:1254 ../gtk/tr-prefs.c:381
+#, fuzzy
+msgid "Peers"
+msgstr "_Peer"
+
+#: ../gtk/details.c:1258 ../gtk/msgwin.c:168
+#, fuzzy
+msgid "Information"
+msgstr "Informazioni sul torrent"
+
+#: ../gtk/details.c:1264 ../gtk/tr-window.c:445
+msgid "Files"
+msgstr "File"
+
+#: ../gtk/details.c:1269 ../gtk/tr-window.c:445
+msgid "Tracker"
+msgstr "Server traccia"
+
+#: ../gtk/details.c:1274 ../gtk/tr-prefs.c:279
+msgid "Options"
+msgstr "Opzioni"
+
+#: ../gtk/dialogs.c:114
+#, fuzzy
+msgid "<b>Really Quit?</b>"
+msgstr "<b>Uscire veramente da %s?</b>"
+
+#: ../gtk/dialogs.c:126
+#, fuzzy
+msgid "_Don't ask me again"
+msgstr "Non chiederlo _di nuovo"
+
+# (ndt) titolo finestra
+#: ../gtk/dialogs.c:213
+#, fuzzy
+msgid "Remove torrent?"
+msgid_plural "Remove torrents?"
+msgstr[0] "Apri torrent"
+msgstr[1] "Apri torrent"
+
+# (ndt) opzione
+#: ../gtk/dialogs.c:215
+#, fuzzy
+msgid "Delete this torrent's downloaded files?"
+msgid_plural "Delete these torrents' downloaded files?"
+msgstr[0] "Usare una directory alternativa per _scaricare"
+msgstr[1] "Usare una directory alternativa per _scaricare"
+
+#: ../gtk/dialogs.c:220
+msgid "Some of these torrents are incomplete or connected to peers."
+msgstr ""
+
+#: ../gtk/dialogs.c:224
+msgid "This torrent is incomplete or connected to peers."
+msgid_plural "One of these torrents is incomplete or connected to peers."
+msgstr[0] ""
+msgstr[1] ""
+
+#. this refers to priority
+#: ../gtk/file-list.c:65
+msgid "High"
+msgstr "Alta"
+
+#. this refers to priority
+#: ../gtk/file-list.c:67
+msgid "Normal"
+msgstr "Normale"
+
+#. this refers to priority
+#: ../gtk/file-list.c:69
+msgid "Low"
+msgstr "Bassa"
+
+#. Translators: this is a column header in Files tab, Details dialog;
+#. Don't include the prefix "filedetails|" in the translation.
+#: ../gtk/file-list.c:478
+msgid "filedetails|File"
+msgstr ""
+
+#. Translators: this is a column header in Files tab, Details dialog;
+#. Don't include the prefix "filedetails|" in the translation.
+#: ../gtk/file-list.c:493
+msgid "filedetails|Progress"
+msgstr ""
+
+#. Translators: this is a column header in Files tab, Details dialog;
+#. Don't include the prefix "filedetails|" in the translation.
+#. Please note the items for this column are checkboxes (yes/no)
+#: ../gtk/file-list.c:511
+msgid "filedetails|Download"
+msgstr ""
+
+#. Translators: this is a column header in Files tab, Details dialog;
+#. Don't include the prefix "filedetails|" in the translation.
+#: ../gtk/file-list.c:523
+msgid "filedetails|Priority"
+msgstr ""
+
+#: ../gtk/ipc.c:232 ../gtk/ipc.c:391
+msgid "Bad IPC protocol version"
+msgstr "Versione protocollo IPC errata"
+
+#: ../gtk/ipc.c:235 ../gtk/ipc.c:394
+#, fuzzy, c-format
+msgid "IPC parse error: %s"
+msgstr "Errore analisi protocollo IPC"
+
+#: ../gtk/ipc.c:264 ../libtransmission/fdlimit.c:390
+#: ../libtransmission/net.c:95
+#, fuzzy, c-format
+msgid "Couldn't create socket: %s"
+msgstr "Impossibile creare il socket: %s"
+
+#: ../gtk/ipc.c:273
+#, fuzzy, c-format
+msgid "Couldn't connect to \"%s\": %s"
+msgstr ""
+"Impossibile creare la directory %s:\n"
+"%s"
+
+#: ../gtk/ipc.c:313 ../gtk/ipc.c:1144
+#, fuzzy, c-format
+msgid "Couldn't set up IPC: %s"
+msgstr "Impossibile impostare IPC: %s"
+
+#: ../gtk/ipc.c:480
+#, fuzzy, c-format
+msgid "Couldn't set up socket: %s"
+msgstr "Impossibile creare il socket: %s"
+
+#: ../gtk/main.c:277
+msgid "Start with all torrents paused"
+msgstr "Avvia con tutti i torrent in pausa"
+
+#: ../gtk/main.c:279
+#, fuzzy
+msgid "Ask the running instance to quit"
+msgstr "Richiede all'istanza attiva di uscire"
+
+#: ../gtk/main.c:282
+msgid "Start minimized in system tray"
+msgstr ""
+
+#: ../gtk/main.c:295
+msgid "Transmission"
+msgstr "Transmission - Client BitTorrent"
+
+#: ../gtk/main.c:300
+msgid "[torrent files]"
+msgstr "[file torrent]"
+
+#: ../gtk/main.c:610
+#, fuzzy
+msgid "<b>Closing Connections</b>"
+msgstr "Chiusura delle connessioni"
+
+#: ../gtk/main.c:614
+msgid "Sending upload/download totals to tracker..."
+msgstr "Invio totali di caricamento/scaricamento al server traccia..."
+
+#: ../gtk/main.c:619
+msgid "_Quit Immediately"
+msgstr "_Chiudi immediatamente"
+
+#: ../gtk/main.c:752
+#, fuzzy, c-format
+msgid "Failed to load torrent file: %s"
+msgid_plural "Failed to load torrent files: %s"
+msgstr[0] ""
+"Impossibile caricare il file torrent:\n"
+"%s"
+msgstr[1] ""
+"Impossibile caricare i file torrent:\n"
+"%s"
+
+#: ../gtk/main.c:876
+msgid "A fast and easy BitTorrent client"
+msgstr "Un client BitTorrent semplice e veloce"
+
+#: ../gtk/main.c:879
+msgid "Copyright 2005-2008 The Transmission Project"
+msgstr "Copyright 2005-2008 The Transmission Project"
+
+#. Translators: translate "translator-credits" as your name
+#. to have it appear in the credits in the "About" dialog
+#: ../gtk/main.c:888
+msgid "translator-credits"
+msgstr ""
+"Milo Casagrande <milo_casagrande@yahoo.it>\n"
+"Calorì Alessandro"
+
+#: ../gtk/makemeta-ui.c:96
+#, fuzzy
+msgid "Torrent creation cancelled"
+msgstr "Creazione del torrent fallita."
+
+#: ../gtk/makemeta-ui.c:97
+#, fuzzy
+msgid "Torrent creation failed"
+msgstr "Creazione del torrent fallita."
+
+#: ../gtk/makemeta-ui.c:104
+#, fuzzy
+msgid "Torrent created"
+msgstr "Torrent creato"
+
+#: ../gtk/makemeta-ui.c:189 ../gtk/makemeta-ui.c:311
+#, fuzzy, c-format
+msgid "No files selected"
+msgstr "Nessun file selezionato"
+
+#: ../gtk/makemeta-ui.c:203 ../gtk/makemeta-ui.c:281
+#, fuzzy, c-format
+msgid "<i>No files selected</i>"
+msgstr "Nessun file selezionato"
+
+#. %1$s is the torrent size
+#. %2$'d is its number of files
+#: ../gtk/makemeta-ui.c:209
+#, c-format
+msgid "<i>%1$s; %2$'d File</i>"
+msgid_plural "<i>%1$s; %2$'d Files</i>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. %1$'s is number of pieces;
+#. %2$s is how big each piece is
+#: ../gtk/makemeta-ui.c:222
+#, c-format
+msgid "<i>%1$'d Piece @ %2$s</i>"
+msgid_plural "<i>%1$'d Pieces @ %2$s</i>"
+msgstr[0] ""
+msgstr[1] ""
+
+# (ndt) titolo finestra
+#: ../gtk/makemeta-ui.c:249
+#, fuzzy
+msgid "New Torrent"
+msgstr "Apri torrent"
+
+#: ../gtk/makemeta-ui.c:263
+#, fuzzy
+msgid "Content"
+msgstr "Commento"
+
+#: ../gtk/makemeta-ui.c:265
+#, fuzzy
+msgid "_Single File:"
+msgstr "File singolo"
+
+# (ndt) titolo finestra
+#: ../gtk/makemeta-ui.c:272
+#, fuzzy
+msgid "_Folder:"
+msgstr "Apri torrent"
+
+#: ../gtk/makemeta-ui.c:294
+#, fuzzy
+msgid "_Private to this tracker"
+msgstr "Privato su questo server traccia"
+
+#: ../gtk/makemeta-ui.c:298
+#, fuzzy
+msgid "Announce _URL:"
+msgstr "_URL di annuncio"
+
+#: ../gtk/makemeta-ui.c:301
+#, fuzzy
+msgid "Commen_t:"
+msgstr "Commento"
+
+#: ../gtk/msgwin.c:84 ../libtransmission/metainfo.c:619
+#, fuzzy, c-format
+msgid "Couldn't save file \"%s\": %s"
+msgstr "Errore nello scrivere su «%s»: %s"
+
+#: ../gtk/msgwin.c:132
+msgid "Save Log"
+msgstr "Salva registro"
+
+#: ../gtk/msgwin.c:167
+msgid "Error"
+msgstr "Errore"
+
+#: ../gtk/msgwin.c:169
+msgid "Debug"
+msgstr "Debug"
+
+#: ../gtk/msgwin.c:229
+msgid "Time"
+msgstr ""
+
+#. noun.  column title for a list
+#: ../gtk/msgwin.c:231 ../gtk/tr-window.c:445
+msgid "Name"
+msgstr "Nome"
+
+#. noun.  column title for a list
+#: ../gtk/msgwin.c:233
+#, fuzzy
+msgid "Message"
+msgstr "Registro dei messaggi"
+
+#: ../gtk/msgwin.c:393
+msgid "Message Log"
+msgstr "Registro dei messaggi"
+
+#: ../gtk/msgwin.c:427
+#, fuzzy
+msgid "Level"
+msgstr "Livello "
+
+#: ../gtk/notify.c:81
+#, fuzzy
+msgid "Torrent Complete"
+msgstr "Torrent creato"
+
+#: ../gtk/notify.c:84
+#, fuzzy
+msgid "Open File"
+msgstr "File"
+
+# (ndt) titolo finestra
+#: ../gtk/notify.c:86
+#, fuzzy
+msgid "Open Folder"
+msgstr "Apri torrent"
+
+#: ../gtk/open-dialog.c:132
+msgid "Torrent files"
+msgstr "File torrent"
+
+#: ../gtk/open-dialog.c:137
+msgid "All files"
+msgstr "Tutti i file"
+
+#. make the dialog
+#: ../gtk/open-dialog.c:162
+#, fuzzy
+msgid "Torrent Options"
+msgstr "Dettagli del torrent"
+
+#: ../gtk/open-dialog.c:183
+msgid "Mo_ve source file to Trash"
+msgstr ""
+
+#: ../gtk/open-dialog.c:184 ../gtk/tr-prefs.c:246
+#, fuzzy
+msgid "_Start when opened"
+msgstr "Avvia con tutti i torrent in pausa"
+
+#: ../gtk/open-dialog.c:195
+#, fuzzy
+msgid "_Source file:"
+msgstr "File torrent"
+
+#: ../gtk/open-dialog.c:199
+#, fuzzy
+msgid "Select Source File"
+msgstr "Torrent pubblico"
+
+#: ../gtk/open-dialog.c:212 ../gtk/tr-prefs.c:255
+#, fuzzy
+msgid "_Destination folder:"
+msgstr "Rapporto della sessione"
+
+#: ../gtk/open-dialog.c:216
+#, fuzzy
+msgid "Select Destination Folder"
+msgstr "Rapporto della sessione"
+
+#: ../gtk/open-dialog.c:231
+#, fuzzy
+msgid "Verify Local Data"
+msgstr "Verifica _dati locali"
+
+# (ndt) titolo finestra
+#: ../gtk/open-dialog.c:291
+#, fuzzy
+msgid "Open a Torrent"
+msgstr "Apri torrent"
+
+#: ../gtk/open-dialog.c:309 ../gtk/tr-prefs.c:242
+msgid "Display _options dialog"
+msgstr ""
+
+#: ../gtk/stats.c:63 ../gtk/stats.c:111
+#, fuzzy, c-format
+msgid "Started %'d time"
+msgid_plural "Started %'d times"
+msgstr[0] "Avviato %d volte"
+msgstr[1] "Avviato %d volte"
+
+#: ../gtk/stats.c:91
+msgid "Statistics"
+msgstr "Statistiche"
+
+#: ../gtk/stats.c:100
+msgid "Current Session"
+msgstr "Sessione attuale"
+
+#: ../gtk/stats.c:108 ../gtk/stats.c:120
+msgid "Duration:"
+msgstr "Durata:"
+
+#: ../gtk/stats.c:110
+#, fuzzy
+msgid "Total"
+msgstr "Rapporto totale"
+
+#. %1$s is how much we've got,
+#. %2$s is how much we'll have when done,
+#. %3$.2f%% is a percentage of the two
+#: ../gtk/torrent-cell-renderer.c:53
+#, fuzzy, c-format
+msgid "%1$s of %2$s (%3$.2f%%)"
+msgstr "%s di %s (%.2f%%)"
+
+#. %1$s is how much we've got,
+#. %2$s is the torrent's total size,
+#. %3$.2f%% is a percentage of the two,
+#. %4$s is how much we've uploaded,
+#. %5$s is our upload-to-download ratio
+#: ../gtk/torrent-cell-renderer.c:64
+#, fuzzy, c-format
+msgid "%1$s of %2$s (%3$.2f%%), uploaded %4$s (Ratio: %5$s)"
+msgstr "%s di %s (%.2f%%), inviati %s (rapporto: %.1f)"
+
+#. %1$s is the torrent's total size,
+#. %2$s is how much we've uploaded,
+#. %3$s is our upload-to-download ratio
+#: ../gtk/torrent-cell-renderer.c:75
+#, fuzzy, c-format
+msgid "%1$s, uploaded %2$s (Ratio: %3$s)"
+msgstr "%s, inviati %s (rapporto: %.1f)"
+
+#: ../gtk/torrent-cell-renderer.c:87
+#, fuzzy
+msgid "Stalled"
+msgstr "Stato"
+
+#. time remaining
+#: ../gtk/torrent-cell-renderer.c:92
+#, fuzzy, c-format
+msgid "%s remaining"
+msgstr "%s rimasto (%.1f%%)"
+
+#. Translators: do not translate the "speed|" disambiguation prefix.
+#. %1$s is the download speed
+#. %2$s is the upload speed
+#: ../gtk/torrent-cell-renderer.c:117
+#, fuzzy, c-format
+msgid "speed|Down: %1$s, Up: %2$s"
+msgstr "Ric: %s, Inv: %s"
+
+#. download speed
+#: ../gtk/torrent-cell-renderer.c:120
+#, c-format
+msgid "Down: %s"
+msgstr "Ric: %s"
+
+#. upload speed
+#: ../gtk/torrent-cell-renderer.c:123
+#, c-format
+msgid "Up: %s"
+msgstr "Inv: %s"
+
+#. the torrent isn't uploading or downloading
+#: ../gtk/torrent-cell-renderer.c:126
+msgid "Idle"
+msgstr "Inattivo"
+
+#: ../gtk/torrent-cell-renderer.c:139
+msgid "Paused"
+msgstr "In pausa"
+
+#: ../gtk/torrent-cell-renderer.c:143
+#, fuzzy
+msgid "Waiting to verify local data"
+msgstr "In attesa di verificare i dati locali"
+
+#. [0...100]
+#: ../gtk/torrent-cell-renderer.c:147 ../gtk/tr-torrent.c:283
+#, c-format
+msgid "Verifying local data (%.1f%% tested)"
+msgstr "Verifica dei dati locali (verificato %.1f%%)"
+
+#: ../gtk/torrent-cell-renderer.c:157 ../gtk/tr-window.c:625
+#: ../gtk/tr-window.c:645
+#, fuzzy, c-format
+msgid "Ratio: %s"
+msgstr "Rapporto:"
+
+#: ../gtk/torrent-cell-renderer.c:198
+#, fuzzy, c-format
+msgid "Downloading from %1$'d of %2$'d connected peer"
+msgid_plural "Downloading from %1$'d of %2$'d connected peers"
+msgstr[0] "Ricezione da %d di %d peer connesso"
+msgstr[1] "Ricezione da %d di %d peer connesso"
+
+#: ../gtk/torrent-cell-renderer.c:208 ../gtk/tr-torrent.c:307
+#, fuzzy, c-format
+msgid "Seeding to %1$'d of %2$'d connected peer"
+msgid_plural "Seeding to %1$'d of %2$'d connected peers"
+msgstr[0] "Distribuzione a %d di %d peer connesso"
+msgstr[1] "Distribuzione a %d di %d peer connesso"
+
+#: ../gtk/transmission.desktop.in.h:1
+msgid "BitTorrent Client"
+msgstr "Client BitTorrent"
+
+#: ../gtk/transmission.desktop.in.h:2
+msgid "Download and share files over BitTorrent"
+msgstr ""
+
+#: ../gtk/transmission.desktop.in.h:3
+#, fuzzy
+msgid "Transmission BitTorrent Client"
+msgstr "Client BitTorrent"
+
+#. %1$'d is the number of torrents we're seeding,
+#. %2$'d is the number of torrents we're downloading,
+#. %3$s is our download speed,
+#. %4$s is our upload speed
+#: ../gtk/tr-icon.c:70
+#, c-format
+msgid ""
+"%1$'d Seeding, %2$'d Downloading\n"
+"Down: %3$s, Up: %4$s"
+msgstr ""
+
+#: ../gtk/tr-prefs.c:195
+msgid "Port is <b>open</b>"
+msgstr "La porta è <b>aperta</b>"
+
+#: ../gtk/tr-prefs.c:196
+msgid "Port is <b>closed</b>"
+msgstr "La porta è <b>chiusa</b>"
+
+#: ../gtk/tr-prefs.c:209
+msgid "<i>Testing port...</i>"
+msgstr "<i>Verifica della porta...</i>"
+
+# (ndt) titolo finestra
+#: ../gtk/tr-prefs.c:231
+#, fuzzy
+msgid "Opening Torrents"
+msgstr "Apri torrent"
+
+# (ndt) opzione
+#: ../gtk/tr-prefs.c:234
+#, fuzzy
+msgid "Automatically add torrents from:"
+msgstr "Avviare il torrent _automaticamente"
+
+#: ../gtk/tr-prefs.c:250
+msgid "Mo_ve source files to Trash"
+msgstr ""
+
+#: ../gtk/tr-prefs.c:259
+#, fuzzy
+msgid "Notification"
+msgstr "Posizione"
+
+#: ../gtk/tr-prefs.c:261
+msgid "_Display a message when torrents finish"
+msgstr ""
+
+#: ../gtk/tr-prefs.c:281
+#, fuzzy
+msgid "Use peer e_xchange"
+msgstr "_Usare lo scambio di peer se possibile"
+
+#: ../gtk/tr-prefs.c:285
+#, fuzzy
+msgid "_Ignore unencrypted peers"
+msgstr "Ignorare i p_eer non cifrati"
+
+#. section header for the "maximum number of peers" section
+#: ../gtk/tr-prefs.c:291
+#, fuzzy
+msgid "Limits"
+msgstr "Limiti di velocità"
+
+#: ../gtk/tr-prefs.c:294
+msgid "Maximum peers _overall:"
+msgstr ""
+
+#: ../gtk/tr-prefs.c:296
+#, fuzzy
+msgid "Maximum peers per _torrent:"
+msgstr "Numero massimo di peer connessi per i nuovi torrent:"
+
+#: ../gtk/tr-prefs.c:330
+#, fuzzy
+msgid "Ports"
+msgstr "Porta"
+
+#: ../gtk/tr-prefs.c:332
+msgid "_Forward port from router"
+msgstr ""
+
+#: ../gtk/tr-prefs.c:342
+#, fuzzy
+msgid "Incoming _port:"
+msgstr "_Porta TCP di ricezione"
+
+#: ../gtk/tr-prefs.c:365
+msgid "Preferences"
+msgstr "Preferenze"
+
+#: ../gtk/tr-prefs.c:378
+#, fuzzy
+msgid "Torrents"
+msgstr "Torrent"
+
+#: ../gtk/tr-prefs.c:384
+msgid "Network"
+msgstr "Rete"
+
+#: ../gtk/tr-torrent.c:226
+#, fuzzy, c-format
+msgid "File \"%s\" isn't a valid torrent"
+msgstr "%s: non è un file torrent valido"
+
+#: ../gtk/tr-torrent.c:229
+#, fuzzy, c-format
+msgid "File \"%s\" is already open"
+msgstr "%s: il torrent è già aperto"
+
+#. [0...100]
+#: ../gtk/tr-torrent.c:278
+#, c-format
+msgid "Waiting to verify local data (%.1f%% tested)"
+msgstr "In attesa della verifica dei dati locali (verificato %.1f%%)"
+
+#: ../gtk/tr-torrent.c:288
+#, c-format
+msgid "Stalled (%.1f%%)"
+msgstr "In stallo (%.1f%%)"
+
+#. %1$s is # of minutes
+#. %2$.1f is a percentage of how much of the torrent is done
+#: ../gtk/tr-torrent.c:294
+#, fuzzy, c-format
+msgid "%1$s remaining (%2$.1f%%)"
+msgstr "%s rimasto (%.1f%%)"
+
+#: ../gtk/tr-torrent.c:300
+#, fuzzy, c-format
+msgid "Uploading to %1$'d of %2$'d connected peer"
+msgid_plural "Uploading to %1$'d of %2$'d connected peers"
+msgstr[0] "Distribuzione a %d di %d peer connesso"
+msgstr[1] "Distribuzione a %d di %d peer connesso"
+
+#: ../gtk/tr-torrent.c:313
+#, c-format
+msgid "Stopped (%.1f%%)"
+msgstr "Fermato (%.1f%%)"
+
+#: ../gtk/tr-window.c:150
+msgid "Torrent"
+msgstr "Torrent"
+
+#: ../gtk/tr-window.c:245
+msgid "Total Ratio"
+msgstr "Rapporto totale"
+
+#: ../gtk/tr-window.c:246
+msgid "Session Ratio"
+msgstr "Rapporto della sessione"
+
+#: ../gtk/tr-window.c:247
+msgid "Total Transfer"
+msgstr "Trasferimenti totali"
+
+#: ../gtk/tr-window.c:248
+msgid "Session Transfer"
+msgstr "Trasferimenti di sessione"
+
+# (ndt) filtro
+#. show all torrents
+#: ../gtk/tr-window.c:434
+msgid "A_ll"
+msgstr "T_utto"
+
+# (ndt) filtro
+#. show only torrents that have connected peers
+#: ../gtk/tr-window.c:436
+msgid "_Active"
+msgstr "_Attivi"
+
+# (ndt) filtro
+#. show only torrents that are trying to download
+#: ../gtk/tr-window.c:438
+msgid "_Downloading"
+msgstr "In _scaricamento"
+
+# (ndt) filtro
+#. show only torrents that are trying to upload
+#: ../gtk/tr-window.c:440
+msgid "_Seeding"
+msgstr "In _distribuzione"
+
+# (ndt) filtro
+#. show only torrents that are paused
+#: ../gtk/tr-window.c:442
+msgid "_Paused"
+msgstr "In _pausa"
+
+#: ../gtk/tr-window.c:599
+#, fuzzy, c-format
+msgid "%1$'d of %2$'d Torrent"
+msgid_plural "%1$'d of %2$'d Torrents"
+msgstr[0] "%d trasferimento di %d"
+msgstr[1] "%d trasferimento di %d"
+
+#: ../gtk/tr-window.c:604
+#, fuzzy, c-format
+msgid "%'d Torrent"
+msgid_plural "%'d Torrents"
+msgstr[0] "Torrent"
+msgstr[1] "Torrent"
+
+#. Translators: do not translate the "size|" disambiguation prefix.
+#. %1$s is the size of the data we've downloaded
+#. %2$s is the size of the data we've uploaded
+#: ../gtk/tr-window.c:633 ../gtk/tr-window.c:641
+#, fuzzy, c-format
+msgid "size|Down: %1$s, Up: %2$s"
+msgstr "Ric: %s, Inv: %s"
+
+#: ../gtk/tr-window.c:697
+#, c-format
+msgid "Tracker will allow requests in %s"
+msgstr ""
+
+#: ../gtk/util.c:86
+#, c-format
+msgid "%'u byte"
+msgid_plural "%'u bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../gtk/util.c:91
+#, c-format
+msgid "%'.1f KB"
+msgstr ""
+
+#: ../gtk/util.c:94
+#, c-format
+msgid "%'.1f MB"
+msgstr ""
+
+#: ../gtk/util.c:97
+#, c-format
+msgid "%'.1f GB"
+msgstr ""
+
+#. 0.0 KB to 999.9 KB
+#: ../gtk/util.c:110
+#, c-format
+msgid "%'.1f KB/s"
+msgstr ""
+
+#. 0.98 MB to 99.99 MB
+#: ../gtk/util.c:112
+#, c-format
+msgid "%'.2f MB/s"
+msgstr ""
+
+#. 100.0 MB to 999.9 MB
+#: ../gtk/util.c:114
+#, c-format
+msgid "%'.1f MB/s"
+msgstr ""
+
+#. insane speeds
+#: ../gtk/util.c:116
+#, c-format
+msgid "%'.2f GB/s"
+msgstr ""
+
+#: ../gtk/util.c:132
+#, c-format
+msgid "%'d second"
+msgid_plural "%'d seconds"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../gtk/util.c:139 ../gtk/util.c:153
+#, c-format
+msgid "%'d minute"
+msgid_plural "%'d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../gtk/util.c:152 ../gtk/util.c:160
+#, c-format
+msgid "%'d hour"
+msgid_plural "%'d hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../gtk/util.c:165
+#, fuzzy, c-format
+msgid "%'d day"
+msgid_plural "%'d days"
+msgstr[0] "giorno"
+msgstr[1] "giorni"
+
+#. did caller give us an uninitialized val?
+#: ../libtransmission/bencode.c:672
+msgid "Invalid metadata"
+msgstr ""
+
+#: ../libtransmission/fastresume.c:420
+#, fuzzy
+msgid "Torrent needs to be verified"
+msgstr "Creazione del torrent fallita."
+
+#: ../libtransmission/fastresume.c:543
+#, c-format
+msgid "Loaded %i peers from resume file"
+msgstr ""
+
+#: ../libtransmission/fastresume.c:589
+#, c-format
+msgid "Skipping unknown resume code %d"
+msgstr ""
+
+#. %s is the torrent name
+#: ../libtransmission/fastresume.c:633 ../libtransmission/fastresume.c:644
+#, fuzzy, c-format
+msgid "Couldn't read resume file for \"%s\""
+msgstr "Errore nello scrivere su «%s»: %s"
+
+#: ../libtransmission/makemeta.c:59
+#, fuzzy, c-format
+msgid "Torrent Creator is skipping file \"%s\": %s"
+msgstr ""
+"Impossibile bloccare il file %s:\n"
+"%s"
+
+#: ../libtransmission/metainfo.c:191 ../libtransmission/metainfo.c:238
+#: ../libtransmission/metainfo.c:250 ../libtransmission/metainfo.c:489
+#: ../libtransmission/metainfo.c:640 ../libtransmission/metainfo.c:672
+#: ../libtransmission/metainfo.c:681
+#, c-format
+msgid "Missing metadata entry \"%s\""
+msgstr ""
+
+#: ../libtransmission/metainfo.c:236 ../libtransmission/metainfo.c:248
+#: ../libtransmission/metainfo.c:255 ../libtransmission/metainfo.c:469
+#: ../libtransmission/metainfo.c:638 ../libtransmission/metainfo.c:648
+#: ../libtransmission/metainfo.c:670 ../libtransmission/metainfo.c:679
+#, c-format
+msgid "Invalid metadata entry \"%s\""
+msgstr ""
+
+#: ../libtransmission/metainfo.c:279 ../libtransmission/metainfo.c:288
+#, fuzzy
+msgid "Torrent is corrupt"
+msgstr "Percorso del file torrent"
+
+#: ../libtransmission/metainfo.c:503
+#, c-format
+msgid "Invalid announce URL \"%s\""
+msgstr ""
+
+#: ../libtransmission/metainfo.c:710
+msgid "Invalid or missing metadata entries \"length\" and \"files\""
+msgstr ""
+
+#: ../libtransmission/natpmp.c:34
+msgid "Port Forwarding (NAT-PMP)"
+msgstr ""
+
+#: ../libtransmission/natpmp.c:68
+#, c-format
+msgid "%s responded \"try again\""
+msgstr ""
+
+#: ../libtransmission/natpmp.c:70
+#, c-format
+msgid "%s succeeded (%d)"
+msgstr ""
+
+#: ../libtransmission/natpmp.c:72
+#, c-format
+msgid "%s failed (%d): %s (%d)"
+msgstr ""
+
+#: ../libtransmission/natpmp.c:112
+msgid "If your router supports NAT-PMP, please make sure NAT-PMP is enabled!"
+msgstr ""
+
+#: ../libtransmission/natpmp.c:113
+msgid "NAT-PMP port forwarding unsuccessful, trying UPnP next"
+msgstr ""
+
+#: ../libtransmission/natpmp.c:139
+#, c-format
+msgid "Found public address \"%s\""
+msgstr ""
+
+#: ../libtransmission/natpmp.c:166
+#, c-format
+msgid "no longer forwarding port %d"
+msgstr ""
+
+#: ../libtransmission/natpmp.c:202
+#, c-format
+msgid "port %d forwarded successfully"
+msgstr ""
+
+#: ../libtransmission/net.c:135
+#, c-format
+msgid "Couldn't connect socket %d to %s, port %d (errno %d - %s)"
+msgstr ""
+
+#: ../libtransmission/net.c:176
+#, c-format
+msgid "Couldn't bind port %d: %s"
+msgstr ""
+
+#: ../libtransmission/net.c:181
+#, c-format
+msgid "Bound socket %d to port %d"
+msgstr ""
+
+#: ../libtransmission/peer-msgs.c:969
+#, fuzzy, c-format
+msgid "Got %d peers from peer exchange"
+msgstr "_Usare lo scambio di peer se possibile"
+
+#: ../libtransmission/peer-msgs.c:1533
+#, c-format
+msgid "Piece %lu, which was just downloaded, failed its checksum test: %s"
+msgstr ""
+
+#: ../libtransmission/shared.c:41
+msgid "Port Forwarding"
+msgstr ""
+
+#. we're in the process of trying to set up port forwarding
+#: ../libtransmission/shared.c:72
+#, fuzzy
+msgid "Starting"
+msgstr "Rapporto della sessione"
+
+#. we've successfully forwarded the port
+#: ../libtransmission/shared.c:74
+#, fuzzy
+msgid "Forwarded"
+msgstr "Scaricati"
+
+#. we're cancelling the port forwarding
+#: ../libtransmission/shared.c:76
+#, fuzzy
+msgid "Stopping"
+msgstr "Fermato (%.1f%%)"
+
+#. the port isn't forwarded
+#: ../libtransmission/shared.c:78
+#, fuzzy
+msgid "Not forwarded"
+msgstr "Scaricati"
+
+#: ../libtransmission/shared.c:96 ../libtransmission/torrent.c:1106
+#, c-format
+msgid "State changed from \"%s\" to \"%s\""
+msgstr ""
+
+#: ../libtransmission/shared.c:99
+#, fuzzy
+msgid "Port forwarding failed."
+msgstr "Analisi IPC fallita: %s"
+
+#: ../libtransmission/shared.c:108
+#, c-format
+msgid "Closing port %d"
+msgstr ""
+
+#: ../libtransmission/shared.c:119
+#, c-format
+msgid "Opened port %d to listen for incoming peer connections"
+msgstr ""
+
+#: ../libtransmission/shared.c:124
+#, c-format
+msgid ""
+"Couldn't open port %d to listen for incoming peer connections (errno %d - %s)"
+msgstr ""
+
+#: ../libtransmission/shared.c:162
+#, fuzzy
+msgid "Stopped"
+msgstr "Fermato (%.1f%%)"
+
+#: ../libtransmission/torrent.c:160
+#, fuzzy, c-format
+msgid "Tracker warning: \"%s\""
+msgstr "Server traccia"
+
+#: ../libtransmission/torrent.c:166
+#, fuzzy, c-format
+msgid "Tracker error: \"%s\""
+msgstr "Server traccia"
+
+#: ../libtransmission/torrent.c:876
+#, c-format
+msgid "Closing torrent; %d left"
+msgstr ""
+
+#. Translators: this is a minor point that's safe to skip over, but FYI:
+#. "Complete" and "Done" are specific, different terms in Transmission:
+#. "Complete" means we've downloaded every file in the torrent.
+#. "Done" means we're done downloading the files we wanted, but NOT all that exist
+#: ../libtransmission/torrent.c:1059
+#, fuzzy
+msgid "Done"
+msgstr "Ric: %s"
+
+#: ../libtransmission/torrent.c:1060
+#, fuzzy
+msgid "Complete"
+msgstr "Completezza"
+
+#: ../libtransmission/torrent.c:1061
+#, fuzzy
+msgid "Incomplete"
+msgstr "Completezza"
+
+#. first %s is the application name
+#. second %s is the version number
+#: ../libtransmission/transmission.c:176
+#, fuzzy, c-format
+msgid "%s %s started"
+msgstr "%s (verificato %s)"
+
+# (ndt) titolo finestra
+#: ../libtransmission/transmission.c:464
+#, fuzzy, c-format
+msgid "Loaded %d torrents"
+msgstr "Apri torrent"
+
+#: ../libtransmission/upnp.c:27
+msgid "Port Forwarding (UPnP)"
+msgstr ""
+
+#: ../libtransmission/upnp.c:91
+#, c-format
+msgid "upnpDiscover failed (errno %d - %s)"
+msgstr ""
+
+#: ../libtransmission/upnp.c:95
+#, c-format
+msgid "Found Internet Gateway Device \"%s\""
+msgstr ""
+
+#: ../libtransmission/upnp.c:96
+#, c-format
+msgid "Local Address is \"%s\""
+msgstr ""
+
+#: ../libtransmission/upnp.c:101
+#, c-format
+msgid "UPNP_GetValidIGD failed (errno %d - %s)"
+msgstr ""
+
+#: ../libtransmission/upnp.c:102 ../libtransmission/upnp.c:157
+msgid "If your router supports UPnP, please make sure UPnP is enabled!"
+msgstr ""
+
+#: ../libtransmission/upnp.c:120
+#, c-format
+msgid "Stopping port forwarding through \"%s\", service \"%s\""
+msgstr ""
+
+#: ../libtransmission/upnp.c:149
+#, c-format
+msgid "Port forwarding through \"%s\", service \"%s\".  (local address: %s:%d)"
+msgstr ""
+
+#: ../libtransmission/upnp.c:152
+msgid "Port forwarding successful!"
+msgstr ""
+
+#: ../libtransmission/upnp.c:156
+#, c-format
+msgid "Port forwarding failed with error %d (errno %d - %s)"
+msgstr ""
+
+#: ../libtransmission/utils.c:400 ../libtransmission/utils.c:406
+#: ../libtransmission/utils.c:414 ../libtransmission/utils.c:420
+#: ../libtransmission/utils.c:427
+#, fuzzy, c-format
+msgid "Couldn't read file \"%s\": %s"
+msgstr "Errore nello scrivere su «%s»: %s"
+
+#: ../libtransmission/utils.c:406
+msgid "Not a regular file"
+msgstr ""
+
+#: ../libtransmission/utils.c:420
+#, fuzzy
+msgid "Memory allocation failed"
+msgstr "Creazione del torrent fallita."
+
+#: ../libtransmission/utils.c:492
+#, c-format
+msgid "File \"%s\" is in the way"
+msgstr ""
+
+#: ../libtransmission/utils.c:559
+#, fuzzy
+msgid "No error"
+msgstr "Errore"
+
+#: ../libtransmission/utils.c:562
+msgid "Unspecified error"
+msgstr ""
+
+#: ../libtransmission/utils.c:564
+msgid "Assert error"
+msgstr ""
+
+#: ../libtransmission/utils.c:567
+msgid "Destination folder doesn't exist"
+msgstr ""
+
+#: ../libtransmission/utils.c:577
+msgid "A torrent with this name and destination folder already exists."
+msgstr ""
+
+#: ../libtransmission/utils.c:579
+msgid "Checksum failed"
+msgstr ""
+
+#: ../libtransmission/utils.c:581
+msgid "Unspecified I/O error"
+msgstr ""
+
+#: ../libtransmission/utils.c:584
+#, fuzzy
+msgid "Tracker error"
+msgstr "Server traccia"
+
+#: ../libtransmission/utils.c:586
+#, fuzzy
+msgid "Tracker warning"
+msgstr "Server traccia"
+
+#: ../libtransmission/utils.c:589
+msgid "Peer sent a bad message"
+msgstr ""
+
+#: ../libtransmission/utils.c:592
+msgid "Unknown error"
+msgstr ""
+
+# (ndt) titolo finestra
+#: ../libtransmission/verify.c:128
+#, fuzzy
+msgid "Verifying torrent"
+msgstr "Apri torrent"
+
+#: ../libtransmission/verify.c:160
+#, fuzzy
+msgid "Queued for verification"
+msgstr ""
+"Impossibile aprire il file %s in scrittura:\n"
+"%s"
+
+#~ msgid "Sort by _Date Added"
+#~ msgstr "Ordina per _data di inserimento"
+
+#~ msgid "Torrent Information"
+#~ msgstr "Informazioni sul torrent"
+
+#, fuzzy
+#~ msgid "Private Torrent: PEX disabled"
+#~ msgstr "Torrent privato, PEX disabilitato"
+
+#, fuzzy
+#~ msgid "Torrent file"
+#~ msgstr "File torrent"
+
+#, fuzzy
+#~ msgid "IPC parse error"
+#~ msgstr "Errore analisi protocollo IPC"
+
+#~ msgid "IPC parsing failed: %s"
+#~ msgstr "Analisi IPC fallita: %s"
+
+#~ msgid "File _Type"
+#~ msgstr "_Tipo di file"
+
+#~ msgid "_File"
+#~ msgstr "_File"
+
+#~ msgid "Commen_t"
+#~ msgstr "Commen_to"
+
+#, fuzzy
+#~ msgid "Couldn't write file \"%s\": %s"
+#~ msgstr "Errore nello scrivere su «%s»: %s"
+
+# (ndt) suggerimento
+#, fuzzy
+#~ msgid "Set the verbosity level"
+#~ msgstr "Seleziona il livello del filtro di debug."
+
+#, fuzzy
+#~ msgid "_Trash original torrent file"
+#~ msgstr "non è un file torrent valido"
+
+#, fuzzy
+#~ msgid "Destination"
+#~ msgstr "Rapporto della sessione"
+
+#, fuzzy
+#~ msgid "Select Torrents"
+#~ msgstr "Torrent pubblico"
+
+#~ msgid "Program started %d times"
+#~ msgstr "Programma avviato %d volte"
+
+#, fuzzy
+#~ msgid "_Trash original torrent files"
+#~ msgstr "non è un file torrent valido"
+
+#, fuzzy
+#~ msgid "Torrent is empty"
+#~ msgstr "Percorso del file torrent"
+
+#~ msgid "Speed Limits"
+#~ msgstr "Limiti di velocità"
+
+#, fuzzy
+#~ msgid "Error reading \"%s\": %s"
+#~ msgstr "Errore nello scrivere su «%s»: %s"
+
+#, fuzzy
+#~ msgid "Too many open files"
+#~ msgstr "File torrent"
+
+#, fuzzy
+#~ msgid "Torrent has no files."
+#~ msgstr "File torrent"
+
+#, fuzzy
+#~ msgid "Torrent is zero bytes long."
+#~ msgstr "il torrent è già aperto"
+
+#, fuzzy
+#~ msgid "Couldn't create socket of type %d"
+#~ msgstr "Impossibile creare il socket: %s"
+
+#, fuzzy
+#~ msgid "_Open"
+#~ msgstr "_Opzioni"
+
+# (ndt) titolo finestra
+#, fuzzy
+#~ msgid "Open an existing torrent"
+#~ msgstr "Apri torrent"
+
+#~ msgid "_Remove"
+#~ msgstr "_Rimuovi"
+
+#~ msgid "_Close"
+#~ msgstr "_Chiudi"
+
+#~ msgid "_About Transmission"
+#~ msgstr "_Informazioni su Transmission"
+
+#~ msgid ""
+#~ "Failed to create the directory %s:\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Impossibile creare la directory %s:\n"
+#~ "%s"
+
+#, fuzzy
+#~ msgid "Failed to open lockfile %s: %s"
+#~ msgstr ""
+#~ "Impossibile bloccare il file %s:\n"
+#~ "%s"
+
+#~ msgid "Secure"
+#~ msgstr "Sicurezza"
+
+#, fuzzy
+#~ msgid "Created by"
+#~ msgstr "Creato da"
+
+#~ msgid "N/A"
+#~ msgstr "N/D"
+
+#, fuzzy
+#~ msgid "Downloaded data"
+#~ msgstr "Dati ricevuti"
+
+#, fuzzy
+#~ msgid "Torrent file name"
+#~ msgstr "Nome del file torrent"
+
+#, fuzzy
+#~ msgid "Limit _download speed to:"
+#~ msgstr "Limitare velocità di _ricezione (KiB/s):"
+
+#, fuzzy
+#~ msgid "KiB/s"
+#~ msgstr "KiB"
+
+#, fuzzy
+#~ msgid "Limit _upload speed to:"
+#~ msgstr "Limitare velocità di _invio (KiB/s):"
+
+#, fuzzy
+#~ msgid "peers"
+#~ msgstr "_Peer"
+
+#~ msgid "Info"
+#~ msgstr "Informazioni"
+
+#~ msgid "Choose a directory"
+#~ msgstr "Scegli una directory"
+
+#~ msgid "This will close all active torrents."
+#~ msgstr "Questa azione chiuderà tutti i torrent attivi."
+
+#, fuzzy
+#~ msgid "Delete torrent?"
+#~ msgid_plural "Delete torrents?"
+#~ msgstr[0] "Torrent pubblico"
+#~ msgstr[1] "Torrent pubblico"
+
+#~ msgid "Failed to create socket: %s"
+#~ msgstr "Impossibile creare il socket: %s"
+
+#~ msgid "Failed to connect to %s: %s"
+#~ msgstr "Impossibile connettersi a %s: %s"
+
+#~ msgid "Failed to set up socket: %s"
+#~ msgstr "Impossibile impostare il socket: %s"
+
+#~ msgid "File"
+#~ msgid_plural "Files"
+#~ msgstr[0] "File"
+#~ msgstr[1] "File"
+
+#~ msgid "Piece"
+#~ msgid_plural "Pieces"
+#~ msgstr[0] "Pezzo"
+#~ msgstr[1] "Pezzi"
+
+#~ msgid "Directory"
+#~ msgstr "Directory"
+
+#~ msgid "Error writing to \"%s\": %s"
+#~ msgstr "Errore nello scrivere su «%s»: %s"
+
+#, fuzzy
+#~ msgid "Download _to:"
+#~ msgstr "Ricezione"
+
+#~ msgid "Cumulative"
+#~ msgstr "Cumulativo"
+
+#, fuzzy
+#~ msgid "Ratio: %s, "
+#~ msgstr "Rapporto: %.1f, "
+
+#, fuzzy
+#~ msgid "Show an _icon in the system tray"
+#~ msgstr "Visuali_zzare un'icona nell'area di notifica"
+
+#~ msgid "Confirm _quit"
+#~ msgstr "Confermare l'u_scita"
+
+#~ msgid "Uploading to %d of %d peer"
+#~ msgid_plural "Uploading to %d of %d peers"
+#~ msgstr[0] "Invio a %d di %d peer"
+#~ msgstr[1] "Invio a %d di %d peer"
+
+#~ msgid "Seeding to %d of %d peer"
+#~ msgid_plural "Seeding to %d of %d peers"
+#~ msgstr[0] "Distribuzione a %d di %d peer"
+#~ msgstr[1] "Distribuzione a %d di %d peer"
+
+#~ msgid "Unrecognized state: %d"
+#~ msgstr "Stato non riconosciuto: %d"
+
+# (ndt) mi tocca mettere così perché non sfrutta le forme
+# plurali e con lo zero risulta una stonatura
+#, fuzzy
+#~ msgid "%d Transfer"
+#~ msgid_plural "%d Transfers"
+#~ msgstr[0] "%d trasferimento/i"
+#~ msgstr[1] "%d trasferimento/i"
+
+#~ msgid "Down: %s  Up: %s"
+#~ msgstr "Ric: %s  Inv: %s"
+
+#~ msgid "B"
+#~ msgstr "B"
+
+#~ msgid "KiB"
+#~ msgstr "KiB"
+
+#~ msgid "MiB"
+#~ msgstr "MiB"
+
+#~ msgid "GiB"
+#~ msgstr "GiB"
+
+#~ msgid "TiB"
+#~ msgstr "TiB"
+
+#~ msgid "PiB"
+#~ msgstr "PiB"
+
+#~ msgid "EiB"
+#~ msgstr "EiB"
+
+#~ msgid "ZiB"
+#~ msgstr "ZiB"
+
+#~ msgid "YiB"
+#~ msgstr "YiB"
+
+#~ msgid "%i %s"
+#~ msgstr "%i %s"
+
+#~ msgid "sec"
+#~ msgid_plural "secs"
+#~ msgstr[0] "secondo"
+#~ msgstr[1] "secondi"
+
+#~ msgid "%i %s %i %s"
+#~ msgstr "%i %s %i %s"
+
+#~ msgid "min"
+#~ msgid_plural "mins"
+#~ msgstr[0] "minuto"
+#~ msgstr[1] "minuti"
+
+#~ msgid "hr"
+#~ msgid_plural "hrs"
+#~ msgstr[0] "ora"
+#~ msgstr[1] "ore"
+
+#~ msgid "Transfer files via Peer to Peer"
+#~ msgstr "Trasferisce file via «Peer to Peer»"
+
+#~ msgid "_High"
+#~ msgstr "_Alta"
+
+#~ msgid "_Normal"
+#~ msgstr "_Normale"
+
+#~ msgid "_Low"
+#~ msgstr "_Bassa"
+
+#~ msgid "Show Message _Log"
+#~ msgstr "Mostra _registro dei messaggi"
+
+#~ msgid "_Priority"
+#~ msgstr "_Priorità"
+
+#~ msgid "Create _New Torrent"
+#~ msgstr "Crea _nuovo torrent"
+
+# (ndt) titolo dialogo
+#~ msgid "Choose a download directory"
+#~ msgstr "Scegli directory di scaricamento"
+
+#~ msgid "Torrent creation aborted."
+#~ msgstr "Creazione del torrent terminata."
+
+#~ msgid "Making Torrent..."
+#~ msgstr "Creazione del torrent..."
+
+#~ msgid "Downloading from %d of %d connected peers"
+#~ msgstr "Ricezione da %d di %d peer connessi"
+
+#~ msgid "Seeding to %d of %d connected peers"
+#~ msgstr "Distribuzione a %d di %d peer connessi"
+
+#~ msgid "Downloading"
+#~ msgstr "Ricezione"
+
+#~ msgid "DL Rate"
+#~ msgstr "Vel. di ric."
+
+#~ msgid "Uploading"
+#~ msgstr "Invio"
+
+#~ msgid "UL Rate"
+#~ msgstr "Vel. di inv."
+
+#~ msgid "Handshaking"
+#~ msgstr "Handshake"
+
+#~ msgid "Uploading to peer"
+#~ msgstr "Invio al peer"
+
+# (ndt) un po' semplificata...
+#~ msgid "Peer wants our data"
+#~ msgstr "Un peer vuole i dati"
+
+#~ msgid "Refusing to send data to peer"
+#~ msgstr "Rifiuto invio di dati al peer"
+
+#~ msgid "Downloading from peer"
+#~ msgstr "Ricezione dal peer"
+
+#~ msgid "Requesting data from peer"
+#~ msgstr "Richiesti dati dal peer"
+
+#~ msgid "Waiting to request data from peer"
+#~ msgstr "Attesa di richiesta dati dal peer"
+
+#~ msgid "Peer will not send us data"
+#~ msgstr "Il peer non invierà dati"
+
+#~ msgid "Uploaded"
+#~ msgstr "Inviati"
+
+#~ msgid "Ratio"
+#~ msgstr "Rapporto"
+
+#~ msgid "Added"
+#~ msgstr "Aggiunto"
+
+#~ msgid "Priority"
+#~ msgstr "Priorità"
+
+#~ msgid "_Info"
+#~ msgstr "_Informazioni"
+
+#~ msgid "_Files"
+#~ msgstr "_File"
+
+#~ msgid "Use the torrent file where it is"
+#~ msgstr "Usare il file torrent dalla sua posizione attuale"
+
+#~ msgid "Keep a copy of the torrent file"
+#~ msgstr "Tenere una copia del file torrent"
+
+#~ msgid "Keep a copy and remove the original"
+#~ msgstr "Tenere una copia e rimuovere l'originale"
+
+#~ msgid "_Limit Upload Speed (KiB/s)"
+#~ msgstr "Limitare velocità di _invio (KiB/s)"
+
+#~ msgid "Li_mit Download Speed (KiB/s)"
+#~ msgstr "Limitare velocità di _ricezione (KiB/s)"
+
+#~ msgid "Downloads"
+#~ msgstr "Scaricamenti"
+
+#~ msgid "P_rompt for download directory"
+#~ msgstr "_Chiedere la directory di scaricamento"
+
+#~ msgid "For torrents added _normally:"
+#~ msgstr "Per i torrent aggiunti _normalmente:"
+
+#~ msgid "For torrents added from _command-line:"
+#~ msgstr "Per i torrent aggiunti da riga di _comando:"
+
+#~ msgid "Global maximum connected peers:"
+#~ msgstr "Numero massimo globale di connessioni ai peer:"
+
+#~ msgid "_Automatically map port"
+#~ msgstr "Mappare _automaticamente la porta"
+
+#~ msgid "NAT traversal uses either NAT-PMP or UPnP"
+#~ msgstr "NAT traversal usa sia NAT-PMP che UPnP"
+
+#~ msgid "%d of %d Transfers"
+#~ msgstr "%d trasferimenti di %d"
+
+#~ msgid "%d Transfers"
+#~ msgstr "%d trasferimenti"
+
+#~ msgid "Ratio: %.1f"
+#~ msgstr "Rapporto: %.1f"
