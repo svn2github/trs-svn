@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>Transmission Appcast</title>
+    <link>http://www.transmissionbt.com/appcast.xml</link>
+    <description>Most recent version available.</description>
+    <language>en</language>
+    <pubDate>Fri, 9 May 2008 14:50:00 -0400</pubDate>
+    <lastBuildDate>Fri, 13 May 2008 18:00:00 -0400</lastBuildDate>
+
+	<item>
+      <title>Transmission 1.22 Released</title>
+      <description><![CDATA[
+<h4>Transmission now requires Mac OS X 10.4.11 with Security Update 2008-002. Mac OS X 10.5 or greater is recommended.</h4>
+
+<h4>Core Changes:</h4>
+<ul>
+ <li>Fix two separate BitTorrent unchoke bugs that could affect performance</li>
+</ul>
+<h4>Mac-specific Changes:</h4>
+<ul>
+ <li>Fix bug where "Program Started" in the Statistics window would always display as 0</li>
+</ul>
+
+
+<p>For a full list of changes, <a href="http://trac.transmissionbt.com/query?group=component&milestone=1.22&order=severity">click here</a>.</p>
+
+Transmission 0.72 and earlier: Complete your downloads before upgrading or you will lose data!]]></description>
+      <pubDate>Fri, 13 May 2008 18:00:00 -0400</pubDate>
+      <enclosure sparkle:version="6189" sparkle:shortVersionString="1.22" sparkle:minimumSystemVersion="10.4.11" url="http://mirrors.m0k.org/transmission/files/Transmission-1.22.dmg" length="2848269" type="application/octet-stream"/>
+    </item>
+    
+  </channel>
+</rss>
