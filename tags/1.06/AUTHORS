@@ -1,0 +1,71 @@
+The Transmission Project
+http://www.transmissionbt.com/
+
+Lead Developers <transmission-dev@m0k.org>
+        Mitchell Livingston <livings124@gmail.com>  (Mac OS X interface)
+        Charles Kerr <charles@rebelbase.com>  (Backend, GTK+ client)
+        Eric Petit <titer@m0k.org>  (Creator)
+        Josh Elsasser <josh@elsasser.org>  (Daemon, Backend, GTK+ interface)
+        Bryan Varner <bryan@varnernet.com>  (BeOS interface)
+
+Project Contributors
+	Hugo van Heuven, madebysofa  (Main icon design)
+	Kendall Hopkins (IPC patches)
+        Nick Pucius  (Mac OS X Help documentation)
+	John Clay
+
+Translators
+Mac OS X, current release:
+        Jorge Carrasco  (Spanish)
+        Etienne Samson  (French)
+        Marco Cavazzuti  (Italian)
+        Anton Sotkov  (Russian)
+        Alexander Bykov  (Russian)
+	Maarten Van Coile  (Dutch)
+
+GTK+:
+        Calorì Alessandro  (Italian)
+        Daniel Nylander  (Swedish)
+        Filipe Gomes (Portuguese)
+        Jaakko Huhtala  (Finnish)
+        Jan Geboers (Dutch)
+        Lubomir Marinov  (Bulgarian)
+        Mircea Suciu  (Romanian)
+        Mirek (Slovakian)
+        Nickolay V. Shmyrev  (Russian)
+        Pavel Shevchuk  (Russian)
+        Pierre-Henri Quelen  (French)
+        Raphael Higino (Brazilian Portuguese)
+        Jean-François Fortin Tam  (French)
+        Tomasz Dominikowski  (Polish)
+        Vicente Carro Fernandez  (Spanish)
+
+Special Thanks
+
+Image Contributors
+	Anthony Ryan  (Mac inspector icons)
+	Rick Patrick  (Toolbar icons)
+        Mike Matas <http://www.mikematas.com/>  (Previous toolbar icons)
+        Jonas Rask  (Globe icon)
+        George Tsotsos
+        Rashid Eissing  (Transfers preferences icon)
+
+Other Contributors
+        Omar and Adrien  (Beta testing)
+        BitTorrent Protocol Specification <http://wiki.theory.org/BitTorrentSpecification>
+        Ahmad M. Afuni  (NetBSD patch)
+        Jeremy Messenger  (FreeBSD patch)
+        John Blitch  (Mac OS X patch)
+        Michael Demars <keul@m0k.org>  (Mac OS X patches)
+        Fredrik Modéen (BeOS patches)
+        Deanna Phillips  (transmissioncli manpage)
+        Nicholas Shanks  (Mac OS X patches)
+
+Third-Party Resources
+Thanks to:
+        Niels Provos for use of libevent <http://monkey.org/~provos/libevent/>
+	Thomas Bernard for use of MiniUPnP and libnatpmp. <http://miniupnp.tuxfamily.org/>
+        The Growl Development Team for use of Growl. <http://growl.info/>
+        Andy Matuschak for use of Sparkle. <http://sparkle.andymatuschak.org/>
+        M. Uli Kusterer for use of UKKQueue.
+        Christian Hammond for use of icon entry. <http://www.chipx86.com/wiki/Libsexy> 
