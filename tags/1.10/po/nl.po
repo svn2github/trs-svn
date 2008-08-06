@@ -1,0 +1,1542 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Transmission-1.1x 5399\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-03-24 20:42+0100\n"
+"PO-Revision-Date: 2008-03-26 22:21+0100\n"
+"Last-Translator: Arnout Lok <arnout.lok@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: Dutch\n"
+"X-Poedit-Country: NETHERLANDS\n"
+
+#: ../gtk/actions.c:47
+msgid "Sort by _Activity"
+msgstr "Sorteren op _activiteit"
+
+#: ../gtk/actions.c:48
+msgid "Sort by _Name"
+msgstr "Sorteren op _naam"
+
+#: ../gtk/actions.c:49
+msgid "Sort by _Progress"
+msgstr "Sorteren op _voortgang"
+
+#: ../gtk/actions.c:50
+msgid "Sort by _State"
+msgstr "Sorteren op _status"
+
+#: ../gtk/actions.c:51
+msgid "Sort by _Tracker"
+msgstr "Sorteren op _tracker"
+
+#: ../gtk/actions.c:68
+msgid "_Main Window"
+msgstr "Hoofdscher_m"
+
+#: ../gtk/actions.c:70
+msgid "Message _Log"
+msgstr "Berichten_logboek"
+
+#: ../gtk/actions.c:84
+msgid "_Minimal View"
+msgstr "_Minimaal overzicht"
+
+#: ../gtk/actions.c:86
+msgid "_Reverse Sort Order"
+msgstr "Omgekeerde sortee_rvolgorde"
+
+#: ../gtk/actions.c:88
+msgid "_Filterbar"
+msgstr "_Filterbalk"
+
+#: ../gtk/actions.c:90
+msgid "_Statusbar"
+msgstr "Stat_usbalk"
+
+#: ../gtk/actions.c:92
+msgid "_Toolbar"
+msgstr "Werk_balk"
+
+#: ../gtk/actions.c:97
+msgid "_Torrent"
+msgstr "_Torrent"
+
+#: ../gtk/actions.c:98
+msgid "_View"
+msgstr "_Beeld"
+
+#: ../gtk/actions.c:99
+msgid "_Sort Torrents By"
+msgstr "_Torrents sorteren op"
+
+#: ../gtk/actions.c:100
+msgid "_Edit"
+msgstr "Be_werken"
+
+#: ../gtk/actions.c:101
+msgid "_Help"
+msgstr "_Help"
+
+#: ../gtk/actions.c:102 ../gtk/actions.c:103
+msgid "Open a torrent"
+msgstr "Torrent openen"
+
+#: ../gtk/actions.c:103
+msgid "_Open..."
+msgstr "_Openen..."
+
+#: ../gtk/actions.c:105
+msgid "_Start"
+msgstr "_Starten"
+
+#: ../gtk/actions.c:106
+msgid "_Statistics"
+msgstr "_Statistieken"
+
+#: ../gtk/actions.c:108
+msgid "_Verify Local Data"
+msgstr "Lokale data veri_fiëren"
+
+#: ../gtk/actions.c:110
+msgid "_Pause"
+msgstr "_Pauzeren"
+
+#: ../gtk/actions.c:112
+msgid "_Delete Files and Remove"
+msgstr "Verwijd_eren en bestanden wissen"
+
+#: ../gtk/actions.c:113
+msgid "_New..."
+msgstr "_Nieuw..."
+
+#: ../gtk/actions.c:114
+msgid "Create a torrent"
+msgstr "Nieuwe torrent"
+
+#: ../gtk/actions.c:116
+msgid "Close _Window"
+msgstr "Scherm sl_uiten"
+
+#: ../gtk/actions.c:117
+msgid "Close main window"
+msgstr "Hoofdscherm sluiten"
+
+#: ../gtk/actions.c:119
+msgid "_Quit"
+msgstr "_Afsluiten"
+
+#: ../gtk/actions.c:121
+msgid "Select _All"
+msgstr "_Alles selecteren"
+
+#: ../gtk/actions.c:123
+msgid "Dese_lect All"
+msgstr "Se_lectie opheffen"
+
+#: ../gtk/actions.c:126
+msgid "_Details"
+msgstr "_Details"
+
+#: ../gtk/actions.c:129
+msgid "Ask Tracker for _More Peers"
+msgstr "Tracker om _meer peers vragen"
+
+#: ../gtk/conf.c:60 ../libtransmission/utils.c:482
+#: ../libtransmission/utils.c:493
+#, c-format
+msgid "Couldn't create \"%s\": %s"
+msgstr "Aanmaken van \"%s\" mislukt: %s"
+
+# Of "Fout bij het openen van ..."
+#: ../gtk/conf.c:81 ../libtransmission/fastresume.c:191
+#: ../libtransmission/fdlimit.c:166 ../libtransmission/makemeta.c:208
+#: ../libtransmission/makemeta.c:237 ../libtransmission/metainfo.c:613
+#, c-format
+msgid "Couldn't open \"%s\": %s"
+msgstr "Kon \"%s\" niet openen: %s"
+
+#: ../gtk/conf.c:85
+#, c-format
+msgid "%s is already running."
+msgstr "Er is al een instantie van %s actief."
+
+#: ../gtk/details.c:246
+msgid "Address"
+msgstr "Adres"
+
+#: ../gtk/details.c:247
+msgid "Client"
+msgstr "Client"
+
+#. 'percent done' column header. terse to keep the column narrow.
+#: ../gtk/details.c:249
+msgid "%"
+msgstr "%"
+
+#. 'download speed' column header. terse to keep the column narrow.
+#: ../gtk/details.c:252
+msgid "Down"
+msgstr "Down"
+
+#. 'upload speed' column header.  terse to keep the column narrow.
+#: ../gtk/details.c:254
+msgid "Up"
+msgstr "Up"
+
+#: ../gtk/details.c:255
+msgid "Status"
+msgstr "Status"
+
+#: ../gtk/details.c:595
+msgid "<b>Availability</b>"
+msgstr "<b>Beschikbaarheid:</b>"
+
+#: ../gtk/details.c:617
+msgid "<b>Connected Peers</b>"
+msgstr "<b>Verbonden peers</b>"
+
+#: ../gtk/details.c:627
+msgid "<b>Seeders:</b>"
+msgstr "<b>Seeders:</b>"
+
+#: ../gtk/details.c:634
+msgid "<b>Leechers:</b>"
+msgstr "<b>Leechers:</b>"
+
+# Hier heb ik nog mijn twijfels over. Evt. 'Voltooid' ipv klaar gebruiken?
+#: ../gtk/details.c:641
+msgid "<b>Completed:</b>"
+msgstr "<b>Compleet:</b>"
+
+#: ../gtk/details.c:671 ../gtk/makemeta-ui.c:292
+msgid "Details"
+msgstr "Details"
+
+#. %1$'d is number of pieces
+#. %2$s is how big each piece is
+#: ../gtk/details.c:677
+#, c-format
+msgid "%1$'d Piece @ %2$s"
+msgid_plural "%1$'d Pieces @ %2$s"
+msgstr[0] "%1$'d deel van %2$s"
+msgstr[1] "%1$'d delen van %2$s"
+
+#: ../gtk/details.c:682
+msgid "Pieces:"
+msgstr "Delen:"
+
+#: ../gtk/details.c:686
+msgid "Hash:"
+msgstr "Controlesom:"
+
+# Dit zou nog enigzins verbeterd kunnen worden.
+#: ../gtk/details.c:689
+msgid "Private to this tracker -- PEX disabled"
+msgstr "Privé voor deze Tracker -- PEX uitgeschakeld"
+
+#: ../gtk/details.c:690
+msgid "Public torrent"
+msgstr "Publieke torrent"
+
+#: ../gtk/details.c:692
+msgid "Privacy:"
+msgstr "Privacy:"
+
+#: ../gtk/details.c:704
+msgid "Comment:"
+msgstr "Commentaar:"
+
+# Afkomst?
+#: ../gtk/details.c:708
+msgid "Origins"
+msgstr "Afkomst"
+
+#: ../gtk/details.c:710 ../gtk/details.c:801 ../gtk/details.c:806
+#, c-format
+msgid "Unknown"
+msgstr "Onbekend"
+
+#: ../gtk/details.c:711
+msgid "Creator:"
+msgstr "Maker:"
+
+#: ../gtk/details.c:715
+msgid "Date:"
+msgstr "Datum:"
+
+#: ../gtk/details.c:719
+msgid "Location"
+msgstr "Locatie"
+
+#: ../gtk/details.c:723
+msgid "Destination folder:"
+msgstr "Downloadmap:"
+
+#: ../gtk/details.c:727
+msgid "Torrent file:"
+msgstr "Torrentbestand:"
+
+#. %1$.1f is percent of how much of what we want's been downloaded,
+#. %2$.1f is percent of how much of the whole torrent we've downloaded
+#: ../gtk/details.c:771
+#, c-format
+msgid "%1$.1f%% (%2$.1f%% selected)"
+msgstr "%1$.1f%% (%2$.1f%% geselecteerd)"
+
+#. %1$s is total size of what we've saved to disk
+#. %2$s is how much of it's passed the checksum test
+#: ../gtk/details.c:779
+#, c-format
+msgid "%1$s (%2$s verified)"
+msgstr "%1$s (%2$s geverifieerd)"
+
+#: ../gtk/details.c:798 ../gtk/util.c:57 ../gtk/util.c:77
+msgid "None"
+msgstr "Geen"
+
+#: ../gtk/details.c:827
+msgid "Transfer"
+msgstr "Overdracht"
+
+#: ../gtk/details.c:830
+msgid "State:"
+msgstr "Status:"
+
+#: ../gtk/details.c:833
+msgid "Progress:"
+msgstr "Voortgang:"
+
+#. "Have" refers to how much of the torrent we have
+#: ../gtk/details.c:837
+msgid "Have:"
+msgstr "In bezit:"
+
+#: ../gtk/details.c:840 ../gtk/stats.c:104 ../gtk/stats.c:116
+msgid "Downloaded:"
+msgstr "Gedownload:"
+
+#: ../gtk/details.c:843 ../gtk/stats.c:102 ../gtk/stats.c:114
+msgid "Uploaded:"
+msgstr "Geüpload:"
+
+#: ../gtk/details.c:847
+msgid "Failed DL:"
+msgstr "Mislukte DL:"
+
+#: ../gtk/details.c:850 ../gtk/stats.c:106 ../gtk/stats.c:118
+msgid "Ratio:"
+msgstr "Ratio:"
+
+# Is 'Rate' hier te vertalen met tempo?
+#: ../gtk/details.c:853
+msgid "Swarm rate:"
+msgstr "Zwermtempo:"
+
+#: ../gtk/details.c:856
+msgid "Error:"
+msgstr "Fout:"
+
+# Hier heb ik nog mijn twijfels over. Evt. 'Voltooid' gebruiken?
+#: ../gtk/details.c:860
+msgid "Completion"
+msgstr "Klaar"
+
+# 'Data' als meervoud van 'datum' is makkelijke te verwarren met computerdata. 'Datums' is volgens de vandale ook goed.
+#: ../gtk/details.c:870
+msgid "Dates"
+msgstr "Datums"
+
+#: ../gtk/details.c:873
+msgid "Started at:"
+msgstr "Gestart op:"
+
+#: ../gtk/details.c:876
+msgid "Last activity at:"
+msgstr "Laatste activiteit:"
+
+#: ../gtk/details.c:971 ../gtk/tr-prefs.c:314
+msgid "Bandwidth"
+msgstr "Bandbreedte"
+
+#: ../gtk/details.c:973 ../gtk/tr-prefs.c:316
+msgid "Limit _download speed (KB/s):"
+msgstr "_Downloadsnelheid limiteren (KiB/s):"
+
+#: ../gtk/details.c:986 ../gtk/tr-prefs.c:323
+msgid "Limit _upload speed (KB/s):"
+msgstr "_Uploadsnelheid limiteren (KiB/s):"
+
+#: ../gtk/details.c:1000
+msgid "Peer Connections"
+msgstr "Peerverbindingen"
+
+#: ../gtk/details.c:1005
+msgid "_Maximum peers:"
+msgstr "_Maximum aantal peers:"
+
+#: ../gtk/details.c:1009
+msgid "_Stop seeding at ratio:"
+msgstr "_Stoppen met seeden bij ratio:"
+
+#: ../gtk/details.c:1064
+msgid "Scrape"
+msgstr "Scrape"
+
+#: ../gtk/details.c:1066
+msgid "Last scrape at:"
+msgstr "Laatst bijgewerkt op:"
+
+#: ../gtk/details.c:1071 ../gtk/details.c:1098
+msgid "Tracker responded:"
+msgstr "Tracker antwoordde:"
+
+#: ../gtk/details.c:1076
+msgid "Next scrape in:"
+msgstr "Bijwerken over:"
+
+# Hier de Engelse protocoltermen gebruikt. was "Aankondigings"
+#: ../gtk/details.c:1082
+msgid "Announce"
+msgstr "Announce"
+
+#: ../gtk/details.c:1090
+msgid "Tracker:"
+msgstr "Tracker:"
+
+#: ../gtk/details.c:1093
+msgid "Last announce at:"
+msgstr "Laatste aankondiging op:"
+
+#: ../gtk/details.c:1103
+msgid "Next announce in:"
+msgstr "Volgende aankondiging over:"
+
+#. how long until the tracker will honor user
+#. * pressing the "ask for more peers" button
+#: ../gtk/details.c:1110
+msgid "Manual announce allowed in:"
+msgstr "Handmatige aankondiging toegestaan over:"
+
+#: ../gtk/details.c:1126 ../gtk/details.c:1138
+msgid "Never"
+msgstr "Nooit"
+
+#. %1$s is torrent name
+#. %2$s its file size
+#: ../gtk/details.c:1230
+#, c-format
+msgid "Details for %1$s (%2$s)"
+msgstr "Details van %1$s (%2$s)"
+
+#: ../gtk/details.c:1249
+msgid "Activity"
+msgstr "Activiteit"
+
+#: ../gtk/details.c:1254 ../gtk/tr-prefs.c:381
+msgid "Peers"
+msgstr "Peers"
+
+#: ../gtk/details.c:1259 ../gtk/tr-window.c:445
+msgid "Tracker"
+msgstr "Tracker"
+
+#: ../gtk/details.c:1263 ../gtk/msgwin.c:168
+msgid "Information"
+msgstr "Informatie"
+
+#: ../gtk/details.c:1269 ../gtk/tr-window.c:445
+msgid "Files"
+msgstr "Bestanden"
+
+#: ../gtk/details.c:1274 ../gtk/tr-prefs.c:279
+msgid "Options"
+msgstr "Opties"
+
+#: ../gtk/dialogs.c:114
+msgid "<b>Really Quit?</b>"
+msgstr "<b>Weet u zeker dat u wilt afsluiten?</b>"
+
+#: ../gtk/dialogs.c:126
+msgid "_Don't ask me again"
+msgstr "_Vraag dit niet opnieuw"
+
+#: ../gtk/dialogs.c:213
+msgid "Remove torrent?"
+msgid_plural "Remove torrents?"
+msgstr[0] "Torrent verwijderen?"
+msgstr[1] "Torrents verwijderen?"
+
+#: ../gtk/dialogs.c:215
+msgid "Delete this torrent's downloaded files?"
+msgid_plural "Delete these torrents' downloaded files?"
+msgstr[0] "De gedownloade bestanden van deze torrent verwijderen?"
+msgstr[1] "De gedownloade bestanden van deze torrents verwijderen?"
+
+#: ../gtk/dialogs.c:220
+msgid "Some of these torrents are incomplete or connected to peers."
+msgstr "Sommige van deze torrents zijn onvolledig of nog verbonden met peers."
+
+#: ../gtk/dialogs.c:224
+msgid "This torrent is incomplete or connected to peers."
+msgid_plural "One of these torrents is incomplete or connected to peers."
+msgstr[0] "Deze torrent is onvolledig of nog verbonden met peers."
+msgstr[1] "Één van deze torrent is onvolledig of nog verbonden met peers."
+
+#. this refers to priority
+#: ../gtk/file-list.c:65
+msgid "High"
+msgstr "Hoog"
+
+#. this refers to priority
+#: ../gtk/file-list.c:67
+msgid "Normal"
+msgstr "Normaal"
+
+#. this refers to priority
+#: ../gtk/file-list.c:69
+msgid "Low"
+msgstr "Laag"
+
+#. Translators: this is a column header in Files tab, Details dialog;
+#. Don't include the prefix "filedetails|" in the translation.
+#: ../gtk/file-list.c:478
+msgid "filedetails|File"
+msgstr "Bestand"
+
+#. Translators: this is a column header in Files tab, Details dialog;
+#. Don't include the prefix "filedetails|" in the translation.
+#: ../gtk/file-list.c:493
+msgid "filedetails|Progress"
+msgstr "Voortgang"
+
+#. Translators: this is a column header in Files tab, Details dialog;
+#. Don't include the prefix "filedetails|" in the translation.
+#. Please note the items for this column are checkboxes (yes/no)
+#: ../gtk/file-list.c:511
+msgid "filedetails|Download"
+msgstr "Download"
+
+#. Translators: this is a column header in Files tab, Details dialog;
+#. Don't include the prefix "filedetails|" in the translation.
+#: ../gtk/file-list.c:523
+msgid "filedetails|Priority"
+msgstr "Prioriteit"
+
+#: ../gtk/ipc.c:232 ../gtk/ipc.c:391
+msgid "Bad IPC protocol version"
+msgstr "Verkeerde IPC-protocol versie"
+
+#: ../gtk/ipc.c:235 ../gtk/ipc.c:394
+#, c-format
+msgid "IPC parse error: %s"
+msgstr "IPC parsefout: %s"
+
+#: ../gtk/ipc.c:264 ../libtransmission/fdlimit.c:390
+#: ../libtransmission/net.c:95
+#, c-format
+msgid "Couldn't create socket: %s"
+msgstr "Aanmaken van socket mislukt: %s"
+
+#: ../gtk/ipc.c:273
+#, c-format
+msgid "Couldn't connect to \"%s\": %s"
+msgstr "Verbinding maken met  \"%s\" mislukt: %s"
+
+#: ../gtk/ipc.c:313 ../gtk/ipc.c:1144
+#, c-format
+msgid "Couldn't set up IPC: %s"
+msgstr "Opzetten van IPC mislukt: %s"
+
+#: ../gtk/ipc.c:480
+#, c-format
+msgid "Couldn't set up socket: %s"
+msgstr "Opzetten van socket mislukt: %s"
+
+#: ../gtk/main.c:277
+msgid "Start with all torrents paused"
+msgstr "Starten met alle torrents gepauzeerd"
+
+#: ../gtk/main.c:279
+msgid "Ask the running instance to quit"
+msgstr "Een al open instantie verzoeken te stoppen"
+
+#: ../gtk/main.c:282
+msgid "Start minimized in system tray"
+msgstr "Geminimaliseerd in het systeemvak starten"
+
+#: ../gtk/main.c:295
+msgid "Transmission"
+msgstr "Transmission"
+
+#: ../gtk/main.c:300
+msgid "[torrent files]"
+msgstr "[torrentbestanden]"
+
+#: ../gtk/main.c:610
+msgid "<b>Closing Connections</b>"
+msgstr "<b>Verbindingen worden afgesloten</b>"
+
+#: ../gtk/main.c:614
+msgid "Sending upload/download totals to tracker..."
+msgstr ""
+"Bezig met het versturen van de upload/download-totalen naar de tracker..."
+
+#: ../gtk/main.c:619
+msgid "_Quit Immediately"
+msgstr "_Direct afsluiten"
+
+#: ../gtk/main.c:752
+#, c-format
+msgid "Failed to load torrent file: %s"
+msgid_plural "Failed to load torrent files: %s"
+msgstr[0] "Laden van torrentbestand mislukt: %s"
+msgstr[1] "Laden van torrentbestanden mislukt: %s"
+
+#: ../gtk/main.c:876
+msgid "A fast and easy BitTorrent client"
+msgstr "Een simpele en snelle BitTorrentclient"
+
+#: ../gtk/main.c:879
+msgid "Copyright 2005-2008 The Transmission Project"
+msgstr "Copyright 2005-2008 Het Transmission Project"
+
+#. Translators: translate "translator-credits" as your name
+#. to have it appear in the credits in the "About" dialog
+#: ../gtk/main.c:888
+msgid "translator-credits"
+msgstr ""
+"Jan Geboers\n"
+"Arnout Lok\n"
+"Maarten Van Coile"
+
+#: ../gtk/makemeta-ui.c:96
+msgid "Torrent creation cancelled"
+msgstr "Aanmaken van torrent afgebroken"
+
+#: ../gtk/makemeta-ui.c:97
+msgid "Torrent creation failed"
+msgstr "Aanmaken van torrent mislukt"
+
+#: ../gtk/makemeta-ui.c:104
+msgid "Torrent created"
+msgstr "Torrent aangemaakt"
+
+#: ../gtk/makemeta-ui.c:189 ../gtk/makemeta-ui.c:311
+#, c-format
+msgid "No files selected"
+msgstr "Geen bestanden geselecteerd"
+
+#: ../gtk/makemeta-ui.c:203 ../gtk/makemeta-ui.c:281
+#, c-format
+msgid "<i>No files selected</i>"
+msgstr "<i>Geen bestanden geselecteerd</i>"
+
+#. %1$s is the torrent size
+#. %2$'d is its number of files
+#: ../gtk/makemeta-ui.c:209
+#, c-format
+msgid "<i>%1$s; %2$'d File</i>"
+msgid_plural "<i>%1$s; %2$'d Files</i>"
+msgstr[0] "<i>%1$s; %2$'d bestand</i>"
+msgstr[1] "<i>%1$s; %2$'d bestanden</i>"
+
+#. %1$'s is number of pieces;
+#. %2$s is how big each piece is
+#: ../gtk/makemeta-ui.c:222
+#, c-format
+msgid "<i>%1$'d Piece @ %2$s</i>"
+msgid_plural "<i>%1$'d Pieces @ %2$s</i>"
+msgstr[0] "<i>%1$'d deel van %2$s</i>"
+msgstr[1] "<i>%1$'d delen van %2$s</i>"
+
+#: ../gtk/makemeta-ui.c:249
+msgid "New Torrent"
+msgstr "Nieuwe torrent"
+
+#: ../gtk/makemeta-ui.c:263
+msgid "Content"
+msgstr "Inhoud"
+
+#: ../gtk/makemeta-ui.c:265
+msgid "_Single File:"
+msgstr "Enkel bestand:"
+
+#: ../gtk/makemeta-ui.c:272
+msgid "_Folder:"
+msgstr "_Map:"
+
+# Dit zou nog enigzins verbeterd kunnen worden.
+# Was: "Privé voor deze Tracker"
+#: ../gtk/makemeta-ui.c:294
+msgid "_Private to this tracker"
+msgstr "_Privé voor deze tracker"
+
+#: ../gtk/makemeta-ui.c:298
+msgid "Announce _URL:"
+msgstr "Aankondigings-_URL"
+
+#: ../gtk/makemeta-ui.c:301
+msgid "Commen_t:"
+msgstr "Commen_taar:"
+
+#: ../gtk/msgwin.c:84 ../libtransmission/metainfo.c:619
+#, c-format
+msgid "Couldn't save file \"%s\": %s"
+msgstr "Kon bestand \"%s\" niet opslaan: %s"
+
+#: ../gtk/msgwin.c:132
+msgid "Save Log"
+msgstr "Log opslaan"
+
+#: ../gtk/msgwin.c:167
+msgid "Error"
+msgstr "Foutmelding"
+
+#: ../gtk/msgwin.c:169
+msgid "Debug"
+msgstr "Debug"
+
+#: ../gtk/msgwin.c:229
+msgid "Time"
+msgstr "Tijdstip"
+
+#. noun.  column title for a list
+#: ../gtk/msgwin.c:231 ../gtk/tr-window.c:445
+msgid "Name"
+msgstr "Naam"
+
+#. noun.  column title for a list
+#: ../gtk/msgwin.c:233
+msgid "Message"
+msgstr "Bericht"
+
+#: ../gtk/msgwin.c:393
+msgid "Message Log"
+msgstr "Berichtenlogboek"
+
+#: ../gtk/msgwin.c:427
+msgid "Level"
+msgstr "Niveau "
+
+#: ../gtk/notify.c:81
+msgid "Torrent Complete"
+msgstr "Torrent compleet"
+
+#: ../gtk/notify.c:84
+msgid "Open File"
+msgstr "Bestand openen"
+
+#: ../gtk/notify.c:86
+msgid "Open Folder"
+msgstr "Map openen"
+
+#: ../gtk/open-dialog.c:132
+msgid "Torrent files"
+msgstr "Torrentbestanden"
+
+#: ../gtk/open-dialog.c:137
+msgid "All files"
+msgstr "Alle bestanden"
+
+#. make the dialog
+#: ../gtk/open-dialog.c:162
+msgid "Torrent Options"
+msgstr "Torrentopties"
+
+#: ../gtk/open-dialog.c:183
+msgid "Mo_ve source file to Trash"
+msgstr "Bronbestand naar de prullenbak verplaatsen"
+
+#: ../gtk/open-dialog.c:184 ../gtk/tr-prefs.c:246
+msgid "_Start when opened"
+msgstr "_Starten na het openen"
+
+#: ../gtk/open-dialog.c:195
+msgid "_Source file:"
+msgstr "_Bronbestand:"
+
+#: ../gtk/open-dialog.c:199
+msgid "Select Source File"
+msgstr "Bronbestand selecteren"
+
+#: ../gtk/open-dialog.c:212 ../gtk/tr-prefs.c:255
+msgid "_Destination folder:"
+msgstr "_Downloadmap:"
+
+#: ../gtk/open-dialog.c:216
+msgid "Select Destination Folder"
+msgstr "Downloadmap selecteren"
+
+#: ../gtk/open-dialog.c:231
+msgid "Verify Local Data"
+msgstr "Lokale data _verifiëren"
+
+#: ../gtk/open-dialog.c:291
+msgid "Open a Torrent"
+msgstr "Torrent openen"
+
+# Evt. iets van "vragen om opties" of
+# "Opties aanpassen bij het openen" i.p.v. Opties-dialoog tonen
+#: ../gtk/open-dialog.c:309 ../gtk/tr-prefs.c:242
+msgid "Display _options dialog"
+msgstr "_Opties aanpassen bij het openen"
+
+#: ../gtk/stats.c:63 ../gtk/stats.c:111
+#, c-format
+msgid "Started %'d time"
+msgid_plural "Started %'d times"
+msgstr[0] "%'d keer gestart"
+msgstr[1] "%'d keer gestart"
+
+#: ../gtk/stats.c:91
+msgid "Statistics"
+msgstr "Statistieken"
+
+#: ../gtk/stats.c:100
+msgid "Current Session"
+msgstr "Huidige sessie"
+
+#: ../gtk/stats.c:108 ../gtk/stats.c:120
+msgid "Duration:"
+msgstr "Duur:"
+
+#: ../gtk/stats.c:110
+msgid "Total"
+msgstr "Totaal"
+
+#. %1$s is how much we've got,
+#. %2$s is how much we'll have when done,
+#. %3$.2f%% is a percentage of the two
+#: ../gtk/torrent-cell-renderer.c:53
+#, c-format
+msgid "%1$s of %2$s (%3$.2f%%)"
+msgstr "%1$s van de %2$s (%3$.2f%%)"
+
+#. %1$s is how much we've got,
+#. %2$s is the torrent's total size,
+#. %3$.2f%% is a percentage of the two,
+#. %4$s is how much we've uploaded,
+#. %5$s is our upload-to-download ratio
+#: ../gtk/torrent-cell-renderer.c:64
+#, c-format
+msgid "%1$s of %2$s (%3$.2f%%), uploaded %4$s (Ratio: %5$s)"
+msgstr "%1$s van de %2$s (%3$.2f%%), geüpload %4$s (Ratio: %5$s)"
+
+#. %1$s is the torrent's total size,
+#. %2$s is how much we've uploaded,
+#. %3$s is our upload-to-download ratio
+#: ../gtk/torrent-cell-renderer.c:75
+#, c-format
+msgid "%1$s, uploaded %2$s (Ratio: %3$s)"
+msgstr "%1$s, geüpload %2$s (Ratio: %3$s)"
+
+#: ../gtk/torrent-cell-renderer.c:87
+msgid "Stalled"
+msgstr "Geblokkeerd"
+
+#. time remaining
+#: ../gtk/torrent-cell-renderer.c:92
+#, c-format
+msgid "%s remaining"
+msgstr "%s resterend"
+
+#. Translators: do not translate the "speed|" disambiguation prefix.
+#. %1$s is the download speed
+#. %2$s is the upload speed
+#: ../gtk/torrent-cell-renderer.c:117
+#, c-format
+msgid "speed|Down: %1$s, Up: %2$s"
+msgstr "Down: %1$s, Up: %2$s"
+
+#. download speed
+#: ../gtk/torrent-cell-renderer.c:120
+#, c-format
+msgid "Down: %s"
+msgstr "Download: %s"
+
+#. upload speed
+#: ../gtk/torrent-cell-renderer.c:123
+#, c-format
+msgid "Up: %s"
+msgstr "Upload: %s"
+
+#. the torrent isn't uploading or downloading
+#: ../gtk/torrent-cell-renderer.c:126
+msgid "Idle"
+msgstr "Inactief"
+
+#: ../gtk/torrent-cell-renderer.c:139
+msgid "Paused"
+msgstr "Gepauzeerd"
+
+#: ../gtk/torrent-cell-renderer.c:143
+msgid "Waiting to verify local data"
+msgstr "Wachten om lokale data te verifiëren"
+
+#. [0...100]
+#: ../gtk/torrent-cell-renderer.c:147 ../gtk/tr-torrent.c:283
+#, c-format
+msgid "Verifying local data (%.1f%% tested)"
+msgstr "Verifiëren van lokale data (%.1f%% getest) "
+
+#: ../gtk/torrent-cell-renderer.c:157 ../gtk/tr-window.c:625
+#: ../gtk/tr-window.c:645
+#, c-format
+msgid "Ratio: %s"
+msgstr "Ratio: %s"
+
+#: ../gtk/torrent-cell-renderer.c:198
+#, c-format
+msgid "Downloading from %1$'d of %2$'d connected peer"
+msgid_plural "Downloading from %1$'d of %2$'d connected peers"
+msgstr[0] "Downloaden van %1$'d van de %2$'d verbonden peer"
+msgstr[1] "Downloaden van %1$'d van de %2$'d verbonden peers"
+
+#: ../gtk/torrent-cell-renderer.c:208 ../gtk/tr-torrent.c:307
+#, c-format
+msgid "Seeding to %1$'d of %2$'d connected peer"
+msgid_plural "Seeding to %1$'d of %2$'d connected peers"
+msgstr[0] "Seeden naar %1$'d van de %2$'d verbonden peer"
+msgstr[1] "Seeden naar %1$'d van de %2$'d verbonden peers"
+
+#: ../gtk/transmission.desktop.in.h:1
+msgid "BitTorrent Client"
+msgstr "BitTorrentclient"
+
+#: ../gtk/transmission.desktop.in.h:2
+msgid "Download and share files over BitTorrent"
+msgstr "Download en deel bestanden via BitTorrent"
+
+#: ../gtk/transmission.desktop.in.h:3
+msgid "Transmission BitTorrent Client"
+msgstr "Transmission BitTorrentclient"
+
+#. %1$'d is the number of torrents we're seeding,
+#. %2$'d is the number of torrents we're downloading,
+#. %3$s is our download speed,
+#. %4$s is our upload speed
+#: ../gtk/tr-icon.c:70
+#, c-format
+msgid ""
+"%1$'d Seeding, %2$'d Downloading\n"
+"Down: %3$s, Up: %4$s"
+msgstr ""
+"%1$'d Seeden, %2$'d Downloaden\n"
+"Down: %3$s, Up: %4$s"
+
+#: ../gtk/tr-prefs.c:195
+msgid "Port is <b>open</b>"
+msgstr "Poort is <b>open</b>"
+
+# Hier misschien 'gesloten' gebruiken ipv 'dicht'?
+#: ../gtk/tr-prefs.c:196
+msgid "Port is <b>closed</b>"
+msgstr "Poort is <b>dicht</b>"
+
+#: ../gtk/tr-prefs.c:209
+msgid "<i>Testing port...</i>"
+msgstr "<i>Poort aan het testen...</i>"
+
+#: ../gtk/tr-prefs.c:231
+msgid "Opening Torrents"
+msgstr "Torrents openen"
+
+#: ../gtk/tr-prefs.c:234
+msgid "Automatically add torrents from:"
+msgstr "Automatisch torrents toevoegen uit:"
+
+#: ../gtk/tr-prefs.c:250
+msgid "Mo_ve source files to Trash"
+msgstr "Bronbestanden naar de prullenbak verplaatsen"
+
+#: ../gtk/tr-prefs.c:259
+msgid "Notification"
+msgstr "Mededelingen"
+
+#: ../gtk/tr-prefs.c:261
+msgid "_Display a message when torrents finish"
+msgstr "Een _bericht tonen wanneer torrents klaar zijn"
+
+#: ../gtk/tr-prefs.c:281
+msgid "Use peer e_xchange"
+msgstr "P_eeruitwisseling gebruiken"
+
+#: ../gtk/tr-prefs.c:285
+msgid "_Ignore unencrypted peers"
+msgstr "_Onversleutelde peers negeren"
+
+#. section header for the "maximum number of peers" section
+#: ../gtk/tr-prefs.c:291
+msgid "Limits"
+msgstr "Limieten"
+
+#: ../gtk/tr-prefs.c:294
+msgid "Maximum peers _overall:"
+msgstr "Gl_obaal maximum aantal peers:"
+
+#: ../gtk/tr-prefs.c:296
+msgid "Maximum peers per _torrent:"
+msgstr "Maximum aantal peers per torrents:"
+
+#: ../gtk/tr-prefs.c:330
+msgid "Ports"
+msgstr "Poorten"
+
+#: ../gtk/tr-prefs.c:332
+msgid "_Forward port from router"
+msgstr "Poort van router forwarden"
+
+#: ../gtk/tr-prefs.c:342
+msgid "Incoming _port:"
+msgstr "Inkomende _poort:"
+
+#: ../gtk/tr-prefs.c:365
+msgid "Preferences"
+msgstr "Voorkeuren"
+
+#: ../gtk/tr-prefs.c:378
+msgid "Torrents"
+msgstr "Torrents"
+
+#: ../gtk/tr-prefs.c:384
+msgid "Network"
+msgstr "Netwerk"
+
+#: ../gtk/tr-torrent.c:226
+#, c-format
+msgid "File \"%s\" isn't a valid torrent"
+msgstr "Bestand \"%s\" is geen geldige torrent"
+
+#: ../gtk/tr-torrent.c:229
+#, c-format
+msgid "File \"%s\" is already open"
+msgstr "Bestand \"%s\" is al open"
+
+#. [0...100]
+#: ../gtk/tr-torrent.c:278
+#, c-format
+msgid "Waiting to verify local data (%.1f%% tested)"
+msgstr "Wachten om lokale data te verifiëren  (%.1f%% getest)"
+
+#: ../gtk/tr-torrent.c:288
+#, c-format
+msgid "Stalled (%.1f%%)"
+msgstr "Geblokkeerd (%.1f%%)"
+
+#. %1$s is # of minutes
+#. %2$.1f is a percentage of how much of the torrent is done
+#: ../gtk/tr-torrent.c:294
+#, c-format
+msgid "%1$s remaining (%2$.1f%%)"
+msgstr "%1$s resterend (%2$.1f%%)"
+
+#: ../gtk/tr-torrent.c:300
+#, c-format
+msgid "Uploading to %1$'d of %2$'d connected peer"
+msgid_plural "Uploading to %1$'d of %2$'d connected peers"
+msgstr[0] "Uploaden naar %1$'d van de %2$'d verbonden peer"
+msgstr[1] "Uploaden naar %1$'d van de %2$'d verbonden peers"
+
+#: ../gtk/tr-torrent.c:313
+#, c-format
+msgid "Stopped (%.1f%%)"
+msgstr "Gestopt (%.1f%%)"
+
+#: ../gtk/tr-window.c:150
+msgid "Torrent"
+msgstr "Torrent"
+
+#: ../gtk/tr-window.c:245
+msgid "Total Ratio"
+msgstr "Ratio (totaal)"
+
+#: ../gtk/tr-window.c:246
+msgid "Session Ratio"
+msgstr "Ratio (deze sessie)"
+
+#: ../gtk/tr-window.c:247
+msgid "Total Transfer"
+msgstr "Overgedragen (totaal)"
+
+#: ../gtk/tr-window.c:248
+msgid "Session Transfer"
+msgstr "Overgedragen (deze sessie)"
+
+#. show all torrents
+#: ../gtk/tr-window.c:434
+msgid "A_ll"
+msgstr "A_lles"
+
+#. show only torrents that have connected peers
+#: ../gtk/tr-window.c:436
+msgid "_Active"
+msgstr "_Actief"
+
+#. show only torrents that are trying to download
+#: ../gtk/tr-window.c:438
+msgid "_Downloading"
+msgstr "_Downloaden"
+
+#. show only torrents that are trying to upload
+#: ../gtk/tr-window.c:440
+msgid "_Seeding"
+msgstr "_Seeden"
+
+#. show only torrents that are paused
+#: ../gtk/tr-window.c:442
+msgid "_Paused"
+msgstr "_Gepauzeerd"
+
+#: ../gtk/tr-window.c:599
+#, c-format
+msgid "%1$'d of %2$'d Torrent"
+msgid_plural "%1$'d of %2$'d Torrents"
+msgstr[0] "%1$'d van de %2$'d Torrent"
+msgstr[1] "%1$'d van de %2$'d Torrents"
+
+#: ../gtk/tr-window.c:604
+#, c-format
+msgid "%'d Torrent"
+msgid_plural "%'d Torrents"
+msgstr[0] "%'d torrent"
+msgstr[1] "%'d torrents"
+
+#. Translators: do not translate the "size|" disambiguation prefix.
+#. %1$s is the size of the data we've downloaded
+#. %2$s is the size of the data we've uploaded
+#: ../gtk/tr-window.c:633 ../gtk/tr-window.c:641
+#, c-format
+msgid "size|Down: %1$s, Up: %2$s"
+msgstr "Down: %1$s, Up: %2$s"
+
+#: ../gtk/tr-window.c:697
+#, c-format
+msgid "Tracker will allow requests in %s"
+msgstr "Tracker zal verzoeken toestaan over %s"
+
+#: ../gtk/util.c:86
+#, c-format
+msgid "%'u byte"
+msgid_plural "%'u bytes"
+msgstr[0] "%'u byte"
+msgstr[1] "%'u bytes"
+
+#: ../gtk/util.c:91
+#, c-format
+msgid "%'.1f KB"
+msgstr "%'.1f KB"
+
+#: ../gtk/util.c:94
+#, c-format
+msgid "%'.1f MB"
+msgstr "%'.1f MB"
+
+#: ../gtk/util.c:97
+#, c-format
+msgid "%'.1f GB"
+msgstr "%'.1f GB"
+
+#. 0.0 KB to 999.9 KB
+#: ../gtk/util.c:110
+#, c-format
+msgid "%'.1f KB/s"
+msgstr "%'.1f KB/s"
+
+#. 0.98 MB to 99.99 MB
+#: ../gtk/util.c:112
+#, c-format
+msgid "%'.2f MB/s"
+msgstr "%'.2f MB/s"
+
+#. 100.0 MB to 999.9 MB
+#: ../gtk/util.c:114
+#, c-format
+msgid "%'.1f MB/s"
+msgstr "%'.1f MB/s"
+
+#. insane speeds
+#: ../gtk/util.c:116
+#, c-format
+msgid "%'.2f GB/s"
+msgstr "%'.2f GB/s"
+
+#: ../gtk/util.c:132
+#, c-format
+msgid "%'d second"
+msgid_plural "%'d seconds"
+msgstr[0] "%'d seconde"
+msgstr[1] "%'d seconden"
+
+#: ../gtk/util.c:139 ../gtk/util.c:153
+#, c-format
+msgid "%'d minute"
+msgid_plural "%'d minutes"
+msgstr[0] "%'d minuut"
+msgstr[1] "%'d minuten"
+
+#: ../gtk/util.c:152 ../gtk/util.c:160
+#, c-format
+msgid "%'d hour"
+msgid_plural "%'d hours"
+msgstr[0] "%'d uur"
+msgstr[1] "%'d uren"
+
+#: ../gtk/util.c:165
+#, c-format
+msgid "%'d day"
+msgid_plural "%'d days"
+msgstr[0] "%'d dag"
+msgstr[1] "%'d dagen"
+
+#. did caller give us an uninitialized val?
+#: ../libtransmission/bencode.c:672
+msgid "Invalid metadata"
+msgstr "Ongeldige metadata"
+
+#: ../libtransmission/fastresume.c:420
+msgid "Torrent needs to be verified"
+msgstr "Torrent moet geverifieerd worden"
+
+# Klinkt nog een beetje raar misschien iets als "10 peers geladen uit lokaal bestand"
+#: ../libtransmission/fastresume.c:543
+#, c-format
+msgid "Loaded %i peers from resume file"
+msgstr "%i peers geladen vanuit hervattingsbestand"
+
+#: ../libtransmission/fastresume.c:589
+#, c-format
+msgid "Skipping unknown resume code %d"
+msgstr "Onbekende hervattingscode %d overslaan"
+
+#. %s is the torrent name
+#: ../libtransmission/fastresume.c:633 ../libtransmission/fastresume.c:644
+#, c-format
+msgid "Couldn't read resume file for \"%s\""
+msgstr "Kon hervattingsbestand niet lezen voor \"%s\""
+
+#: ../libtransmission/makemeta.c:59
+#, c-format
+msgid "Torrent Creator is skipping file \"%s\": %s"
+msgstr "Torrent Creator slaat bestand \"%s\" over: %s "
+
+#: ../libtransmission/metainfo.c:191 ../libtransmission/metainfo.c:238
+#: ../libtransmission/metainfo.c:250 ../libtransmission/metainfo.c:489
+#: ../libtransmission/metainfo.c:640 ../libtransmission/metainfo.c:672
+#: ../libtransmission/metainfo.c:681
+#, c-format
+msgid "Missing metadata entry \"%s\""
+msgstr "Ontbrekende metadata-invoer \"%s\""
+
+#: ../libtransmission/metainfo.c:236 ../libtransmission/metainfo.c:248
+#: ../libtransmission/metainfo.c:255 ../libtransmission/metainfo.c:469
+#: ../libtransmission/metainfo.c:638 ../libtransmission/metainfo.c:648
+#: ../libtransmission/metainfo.c:670 ../libtransmission/metainfo.c:679
+#, c-format
+msgid "Invalid metadata entry \"%s\""
+msgstr "Ongeldige metadata-invoer \"%s\""
+
+#: ../libtransmission/metainfo.c:279 ../libtransmission/metainfo.c:288
+msgid "Torrent is corrupt"
+msgstr "Torrent is beschadigd"
+
+#: ../libtransmission/metainfo.c:503
+#, c-format
+msgid "Invalid announce URL \"%s\""
+msgstr "Ongeldige aankondigings-URL \"%s\""
+
+#: ../libtransmission/metainfo.c:710
+msgid "Invalid or missing metadata entries \"length\" and \"files\""
+msgstr "Ongeldige of ontbrekende metadatavelden \"length\" and \"files\""
+
+#: ../libtransmission/natpmp.c:34
+msgid "Port Forwarding (NAT-PMP)"
+msgstr "Port forwarding (NAT-PMP)"
+
+#: ../libtransmission/natpmp.c:68
+#, c-format
+msgid "%s responded \"try again\""
+msgstr "%s antwoordde \"try again\""
+
+#: ../libtransmission/natpmp.c:70
+#, c-format
+msgid "%s succeeded (%d)"
+msgstr "%s gelukt (%d)"
+
+#: ../libtransmission/natpmp.c:72
+#, c-format
+msgid "%s failed (%d): %s (%d)"
+msgstr "%s mislukt (%d): %s (%d)"
+
+#: ../libtransmission/natpmp.c:112
+msgid "If your router supports NAT-PMP, please make sure NAT-PMP is enabled!"
+msgstr ""
+"Als uw router NAT-PMP ondersteund, verzeker u er dan van dat NAT-PMP is "
+"ingeschakeld!"
+
+#: ../libtransmission/natpmp.c:113
+msgid "NAT-PMP port forwarding unsuccessful, trying UPnP next"
+msgstr "NAT-PMP port forwarding niet succesvol, als volgende UPnP proberen"
+
+#: ../libtransmission/natpmp.c:139
+#, c-format
+msgid "Found public address \"%s\""
+msgstr "Publiek adres gevonden \"%s\""
+
+#: ../libtransmission/natpmp.c:166
+#, c-format
+msgid "no longer forwarding port %d"
+msgstr "poort %d wordt niet langer geforward"
+
+#: ../libtransmission/natpmp.c:202
+#, c-format
+msgid "port %d forwarded successfully"
+msgstr "poort %d succesvol geforward"
+
+#: ../libtransmission/net.c:135
+#, c-format
+msgid "Couldn't connect socket %d to %s, port %d (errno %d - %s)"
+msgstr "Kon socket %d niet verbinden met %s, poort %d (errno %d - %s)"
+
+# 'bind' is niet echt verbinden in het nederlands.
+#: ../libtransmission/net.c:176
+#, c-format
+msgid "Couldn't bind port %d: %s"
+msgstr "Kon poort %d niet koppelen: %s"
+
+#: ../libtransmission/net.c:181
+#, c-format
+msgid "Bound socket %d to port %d"
+msgstr "Socket %d gekoppeld aan poort %d"
+
+#: ../libtransmission/peer-msgs.c:969
+#, c-format
+msgid "Got %d peers from peer exchange"
+msgstr "%d peers verkregen via peeruitwisseling"
+
+#: ../libtransmission/peer-msgs.c:1533
+#, c-format
+msgid "Piece %lu, which was just downloaded, failed its checksum test: %s"
+msgstr "Deel %lu, welke net is gedownload, gaf een fout bij de controlesom: %s"
+
+#: ../libtransmission/shared.c:41
+msgid "Port Forwarding"
+msgstr "Port Forwarding"
+
+#. we're in the process of trying to set up port forwarding
+#: ../libtransmission/shared.c:72
+msgid "Starting"
+msgstr "Starten"
+
+#. we've successfully forwarded the port
+#: ../libtransmission/shared.c:74
+msgid "Forwarded"
+msgstr "Geforward"
+
+#. we're cancelling the port forwarding
+#: ../libtransmission/shared.c:76
+msgid "Stopping"
+msgstr "Stoppen"
+
+#. the port isn't forwarded
+#: ../libtransmission/shared.c:78
+msgid "Not forwarded"
+msgstr "Niet geforward"
+
+#: ../libtransmission/shared.c:96 ../libtransmission/torrent.c:1106
+#, c-format
+msgid "State changed from \"%s\" to \"%s\""
+msgstr "Status gewijzigd van \"%s\" naar \"%s\""
+
+#: ../libtransmission/shared.c:99
+msgid "Port forwarding failed."
+msgstr "Port forwarding is mislukt"
+
+#: ../libtransmission/shared.c:108
+#, c-format
+msgid "Closing port %d"
+msgstr "Bezig met het sluiten van poort %d"
+
+#: ../libtransmission/shared.c:119
+#, c-format
+msgid "Opened port %d to listen for incoming peer connections"
+msgstr "Poort %d geopend om te luisteren naar binnenkomende peerverbindingen"
+
+#: ../libtransmission/shared.c:124
+#, c-format
+msgid ""
+"Couldn't open port %d to listen for incoming peer connections (errno %d - %s)"
+msgstr ""
+"Kon poort %d niet openen om te luisteren naar binnenkomde peerverbindingen "
+"(errno %d - %s)"
+
+#: ../libtransmission/shared.c:162
+msgid "Stopped"
+msgstr "Gestopt"
+
+#: ../libtransmission/torrent.c:160
+#, c-format
+msgid "Tracker warning: \"%s\""
+msgstr "Trackerwaarschuwing: \"%s\""
+
+#: ../libtransmission/torrent.c:166
+#, c-format
+msgid "Tracker error: \"%s\""
+msgstr "Trackerfout: \"%s\""
+
+#: ../libtransmission/torrent.c:876
+#, c-format
+msgid "Closing torrent; %d left"
+msgstr "Torrent aan het sluiten; %d over"
+
+#. Translators: this is a minor point that's safe to skip over, but FYI:
+#. "Complete" and "Done" are specific, different terms in Transmission:
+#. "Complete" means we've downloaded every file in the torrent.
+#. "Done" means we're done downloading the files we wanted, but NOT all that exist
+#: ../libtransmission/torrent.c:1059
+msgid "Done"
+msgstr "Klaar"
+
+#: ../libtransmission/torrent.c:1060
+msgid "Complete"
+msgstr "Compleet"
+
+#: ../libtransmission/torrent.c:1061
+msgid "Incomplete"
+msgstr "Incompleet"
+
+#. first %s is the application name
+#. second %s is the version number
+#: ../libtransmission/transmission.c:176
+#, c-format
+msgid "%s %s started"
+msgstr "%s %s gestart"
+
+#: ../libtransmission/transmission.c:464
+#, c-format
+msgid "Loaded %d torrents"
+msgstr "%d torrents geladen"
+
+#: ../libtransmission/upnp.c:27
+msgid "Port Forwarding (UPnP)"
+msgstr "Port Forwarding (UPnP)"
+
+#: ../libtransmission/upnp.c:91
+#, c-format
+msgid "upnpDiscover failed (errno %d - %s)"
+msgstr "upnpDiscover mislukt (errno %d - %s)"
+
+#: ../libtransmission/upnp.c:95
+#, c-format
+msgid "Found Internet Gateway Device \"%s\""
+msgstr "Internet Gateway Device gevonden \"%s\""
+
+#: ../libtransmission/upnp.c:96
+#, c-format
+msgid "Local Address is \"%s\""
+msgstr "Lokaal adres is \"%s\""
+
+#: ../libtransmission/upnp.c:101
+#, c-format
+msgid "UPNP_GetValidIGD failed (errno %d - %s)"
+msgstr "UPNP_GetValidIGD mislukt (errno %d - %s)"
+
+#: ../libtransmission/upnp.c:102 ../libtransmission/upnp.c:157
+msgid "If your router supports UPnP, please make sure UPnP is enabled!"
+msgstr ""
+"Als uw router UPnP ondersteund, verzeker u er dan van dat dit is "
+"ingeschakeld!"
+
+#: ../libtransmission/upnp.c:120
+#, c-format
+msgid "Stopping port forwarding through \"%s\", service \"%s\""
+msgstr "Stoppen met port forwarding via \"%s\", service \"%s\""
+
+#: ../libtransmission/upnp.c:149
+#, c-format
+msgid "Port forwarding through \"%s\", service \"%s\".  (local address: %s:%d)"
+msgstr "Port forwarding via \"%s\", service \"%s\".  (lokaal adres: %s:%d)"
+
+#: ../libtransmission/upnp.c:152
+msgid "Port forwarding successful!"
+msgstr "Port forwarding succesvol!"
+
+#: ../libtransmission/upnp.c:156
+#, c-format
+msgid "Port forwarding failed with error %d (errno %d - %s)"
+msgstr "Port forwarding mislukt met fout %d (errno %d - %s)"
+
+#: ../libtransmission/utils.c:400 ../libtransmission/utils.c:406
+#: ../libtransmission/utils.c:414 ../libtransmission/utils.c:420
+#: ../libtransmission/utils.c:427
+#, c-format
+msgid "Couldn't read file \"%s\": %s"
+msgstr "Kon bestand \"%s\" niet lezen: %s"
+
+#: ../libtransmission/utils.c:406
+msgid "Not a regular file"
+msgstr "Niet een standaardbestand"
+
+#: ../libtransmission/utils.c:420
+msgid "Memory allocation failed"
+msgstr "Geheugen toewijzing mislukt"
+
+#: ../libtransmission/utils.c:492
+#, c-format
+msgid "File \"%s\" is in the way"
+msgstr "Bestaand \"%s\" staat in de weg"
+
+#: ../libtransmission/utils.c:559
+msgid "No error"
+msgstr "Geen fout"
+
+#: ../libtransmission/utils.c:562
+msgid "Unspecified error"
+msgstr "Ongespecificeerde fout"
+
+#: ../libtransmission/utils.c:564
+msgid "Assert error"
+msgstr "'Assert'-fout"
+
+#: ../libtransmission/utils.c:567
+msgid "Destination folder doesn't exist"
+msgstr "Doelmap bestaat niet"
+
+#: ../libtransmission/utils.c:577
+msgid "A torrent with this name and destination folder already exists."
+msgstr "Een torrent met deze name en doelmap bestaat reeds."
+
+#: ../libtransmission/utils.c:579
+msgid "Checksum failed"
+msgstr "Controlesom komt niet overeen"
+
+#: ../libtransmission/utils.c:581
+msgid "Unspecified I/O error"
+msgstr "Ongespecificeerde I/O-fout"
+
+#: ../libtransmission/utils.c:584
+msgid "Tracker error"
+msgstr "Trackerfout"
+
+#: ../libtransmission/utils.c:586
+msgid "Tracker warning"
+msgstr "Trackerwaarschuwing"
+
+#: ../libtransmission/utils.c:589
+msgid "Peer sent a bad message"
+msgstr "Peer stuurde een slecht bericht"
+
+#: ../libtransmission/utils.c:592
+msgid "Unknown error"
+msgstr "Onbekende fout"
+
+#: ../libtransmission/verify.c:128
+msgid "Verifying torrent"
+msgstr "Torrent verifiëren"
+
+#: ../libtransmission/verify.c:160
+msgid "Queued for verification"
+msgstr "In de rij voor verificatie"
